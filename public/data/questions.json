@@ -2543,5 +2543,545 @@
       "퓨샷패턴",
       "Few-shot Pattern"
     ]
+  },
+  {
+    "id": "제2401회_2급_1번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_1번.png",
+    "explainImage": null,
+    "answerIndex": 2
+  },
+  {
+    "id": "제2401회_2급_2번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_2번.png",
+    "explainImage": null,
+    "answerIndex": 3
+  },
+  {
+    "id": "제2401회_2급_3번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_3번.png",
+    "explainImage": null,
+    "answerIndex": 3
+  },
+  {
+    "id": "제2401회_2급_4번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_4번.png",
+    "explainImage": null,
+    "answerIndex": 2
+  },
+  {
+    "id": "제2401회_2급_5번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_5번.png",
+    "explainImage": null,
+    "answerIndex": 1
+  },
+  {
+    "id": "제2401회_2급_6번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_6번.png",
+    "explainImage": null,
+    "answerIndex": 1
+  },
+  {
+    "id": "제2401회_2급_7번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_7번.png",
+    "explainImage": null,
+    "answerIndex": 0
+  },
+  {
+    "id": "제2401회_2급_8번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_8번.png",
+    "explainImage": null,
+    "answerIndex": 0
+  },
+  {
+    "id": "제2401회_2급_9번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_9번.png",
+    "explainImage": null,
+    "answerIndex": 3
+  },
+  {
+    "id": "제2401회_2급_10번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_10번.png",
+    "explainImage": null,
+    "answerIndex": 2
+  },
+  {
+    "id": "제2401회_2급_11번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_11번.png",
+    "explainImage": null,
+    "answerIndex": 1
+  },
+  {
+    "id": "제2401회_2급_12번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_12번.png",
+    "explainImage": null,
+    "answerIndex": 0
+  },
+  {
+    "id": "제2401회_2급_13번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_13번.png",
+    "explainImage": null,
+    "answerIndex": 3
+  },
+  {
+    "id": "제2401회_2급_14번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_14번.png",
+    "explainImage": null,
+    "answerIndex": 1
+  },
+  {
+    "id": "제2401회_2급_15번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_15번.png",
+    "explainImage": null,
+    "answerIndex": 3
+  },
+  {
+    "id": "제2401회_2급_16번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_16번.png",
+    "explainImage": null,
+    "answerIndex": 2
+  },
+  {
+    "id": "제2401회_2급_17번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_17번.png",
+    "explainImage": null,
+    "answerIndex": 1
+  },
+  {
+    "id": "제2401회_2급_18번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_18번.png",
+    "explainImage": null,
+    "answerIndex": 3
+  },
+  {
+    "id": "제2401회_2급_19번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_19번.png",
+    "explainImage": null,
+    "answerIndex": 2
+  },
+  {
+    "id": "제2401회_2급_20번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_20번.png",
+    "explainImage": null,
+    "answerIndex": 0
+  },
+  {
+    "id": "제2401회_2급_21번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_21번.png",
+    "explainImage": null,
+    "answerIndex": 1
+  },
+  {
+    "id": "제2401회_2급_22번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_22번.png",
+    "explainImage": null,
+    "answerIndex": 0
+  },
+  {
+    "id": "제2401회_2급_23번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_23번.png",
+    "explainImage": null,
+    "answerIndex": 3
+  },
+  {
+    "id": "제2401회_2급_24번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_24번.png",
+    "explainImage": null,
+    "answerIndex": 3
+  },
+  {
+    "id": "제2401회_2급_25번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_25번.png",
+    "explainImage": null,
+    "answerIndex": 3
+  },
+  {
+    "id": "제2401회_2급_26번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_26번.png",
+    "explainImage": null,
+    "answerIndex": 1
+  },
+  {
+    "id": "제2401회_2급_27번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_27번.png",
+    "explainImage": null,
+    "answerIndex": 2
+  },
+  {
+    "id": "제2401회_2급_28번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_28번.png",
+    "explainImage": null,
+    "answerIndex": 1
+  },
+  {
+    "id": "제2401회_2급_29번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_29번.png",
+    "explainImage": null,
+    "answerIndex": 1
+  },
+  {
+    "id": "제2401회_2급_30번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_30번.png",
+    "explainImage": null,
+    "answerIndex": 0
+  },
+  {
+    "id": "제2401회_2급_31번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_31번.png",
+    "explainImage": null,
+    "answerIndex": 0
+  },
+  {
+    "id": "제2401회_2급_32번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_32번.png",
+    "explainImage": null,
+    "answerIndex": 3
+  },
+  {
+    "id": "제2401회_2급_33번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_33번.png",
+    "explainImage": null,
+    "answerIndex": 2
+  },
+  {
+    "id": "제2401회_2급_34번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_34번.png",
+    "explainImage": null,
+    "answerIndex": 2
+  },
+  {
+    "id": "제2401회_2급_35번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_35번.png",
+    "explainImage": null,
+    "answerIndex": 2
+  },
+  {
+    "id": "제2401회_2급_36번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_36번.png",
+    "explainImage": null,
+    "answerIndex": 3
+  },
+  {
+    "id": "제2401회_2급_37번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_37번.png",
+    "explainImage": null,
+    "answerIndex": 0
+  },
+  {
+    "id": "제2401회_2급_38번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_38번.png",
+    "explainImage": null,
+    "answerIndex": 3
+  },
+  {
+    "id": "제2401회_2급_39번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_39번.png",
+    "explainImage": null,
+    "answerIndex": 2
+  },
+  {
+    "id": "제2401회_2급_40번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_40번.png",
+    "explainImage": null,
+    "answerIndex": 1
+  },
+  {
+    "id": "제2401회_2급_41번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_41번.png",
+    "explainImage": null,
+    "answerIndex": 2
+  },
+  {
+    "id": "제2401회_2급_42번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_42번.png",
+    "explainImage": null,
+    "answerIndex": 3
+  },
+  {
+    "id": "제2401회_2급_43번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_43번.png",
+    "explainImage": null,
+    "answerIndex": 2
+  },
+  {
+    "id": "제2401회_2급_44번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_44번.png",
+    "explainImage": null,
+    "answerIndex": 1
+  },
+  {
+    "id": "제2401회_2급_45번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_45번.png",
+    "explainImage": null,
+    "answerIndex": 0
+  },
+  {
+    "id": "제2401회_2급_46번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_46번.png",
+    "explainImage": null,
+    "answerIndex": 1
+  },
+  {
+    "id": "제2401회_2급_47번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_47번.png",
+    "explainImage": null,
+    "answerIndex": 2
+  },
+  {
+    "id": "제2401회_2급_48번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_48번.png",
+    "explainImage": null,
+    "answerIndex": 3
+  },
+  {
+    "id": "제2401회_2급_49번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_49번.png",
+    "explainImage": null,
+    "answerIndex": 1
+  },
+  {
+    "id": "제2401회_2급_50번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_50번.png",
+    "explainImage": null,
+    "answerIndex": 3
+  },
+  {
+    "id": "제2401회_2급_51번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_51번.png",
+    "explainImage": null,
+    "answerIndex": 2
+  },
+  {
+    "id": "제2401회_2급_52번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_52번.png",
+    "explainImage": null,
+    "answerIndex": 1
+  },
+  {
+    "id": "제2401회_2급_53번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_53번.png",
+    "explainImage": null,
+    "answerIndex": 1
+  },
+  {
+    "id": "제2401회_2급_54번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_54번.png",
+    "explainImage": null,
+    "answerIndex": 1
+  },
+  {
+    "id": "제2401회_2급_55번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_55번.png",
+    "explainImage": null,
+    "answerIndex": 2
+  },
+  {
+    "id": "제2401회_2급_56번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_56번.png",
+    "explainImage": null,
+    "answerIndex": 0
+  },
+  {
+    "id": "제2401회_2급_57번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_57번.png",
+    "explainImage": null,
+    "answerIndex": 3
+  },
+  {
+    "id": "제2401회_2급_58번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_58번.png",
+    "explainImage": null,
+    "answerIndex": 1
+  },
+  {
+    "id": "제2401회_2급_59번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_59번.png",
+    "explainImage": null,
+    "answerIndex": 0
+  },
+  {
+    "id": "제2401회_2급_60번",
+    "level": 2,
+    "sessionId": "제2401회_2급",
+    "type": "choice",
+    "questionImage": "/questions/제2401회_2급/제2401회_2급_60번.png",
+    "explainImage": null,
+    "answerIndex": 3
   }
 ]
