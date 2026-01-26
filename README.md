@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI POT CBT
 
-## Getting Started
+로컬 CBT(Computer Based Test) 프로젝트입니다. 문제/해설 이미지를 기반으로
+문항을 구성하고, 랜덤 출제/뷰어/오답노트 기능을 제공합니다.
 
-First, run the development server:
+## 기능
+- 문제풀기(랜덤 출제, 단일 회차/모의고사)
+- 문제 보기(한 문제씩/전체 보기)
+- 주관식 자동 채점(공백/대소문자/일부 특수문자 무시)
+- 오답노트
+- 문제/해설 이미지 자동 정리 스크립트
 
+## 실행
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 문제 데이터
+- 데이터 파일: `public/data/questions.json`
+- 이미지 경로:
+  - 문제: `public/questions/<세트명>/...`
+  - 해설: `public/explanations/<세트명>/...`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 자동화 스크립트
+문제/해설 이미지 파일명을 정리하고 `questions.json`을 생성/갱신합니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+node scripts/rename-and-generate.js
+```
 
-## Learn More
+옵션:
+- `--subjective="24-26,30"`
+- `--forceType=true`
+- `--forceBFormMap=true`
 
-To learn more about Next.js, take a look at the following resources:
+## 문제풀기 설정
+- **선택년도**: 단일 회차에서 랜덤 출제 (기본 문항 수 = 해당 회차 전체 문항 수)
+- **모의고사**: 체크한 회차들을 합쳐 랜덤 출제 (기본 문항 수 = 체크된 회차의 총 문항 수)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 주의사항
+- `.env.local` 등 민감 정보는 커밋하지 않습니다.
+- 이미지가 많으므로 저장소 용량을 확인하세요.
