@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { loadQuestions, Question } from "@/lib/questions";
-import { getWrongMap, removeWrong } from "@/lib/wrongNotes";
+import { clearWrongNotes, getWrongMap, removeWrong } from "@/lib/wrongNotes";
 import Link from "next/link";
 
 export default function WrongPage() {
@@ -31,12 +31,23 @@ export default function WrongPage() {
     setTick((v) => v + 1);
   };
 
+  const clearAll = () => {
+    if (!confirm("오답노트를 모두 초기화할까요?")) return;
+    clearWrongNotes();
+    setTick((v) => v + 1);
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-3xl mx-auto p-6 space-y-4">
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-bold">오답노트</h1>
-          <Link className="text-sm underline" href="/">홈</Link>
+          <div className="flex items-center gap-3">
+            <button onClick={clearAll} className="text-sm underline">
+              초기화
+            </button>
+            <Link className="text-sm underline" href="/">홈</Link>
+          </div>
         </div>
 
         {wrongQuestions.length === 0 ? (

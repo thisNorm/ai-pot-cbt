@@ -37,3 +37,8 @@ export function removeWrong(questionId: string) {
   map[questionId].isActive = false;
   saveWrongMap(map);
 }
+
+export function clearWrongNotes() {
+  if (typeof window === "undefined") return;
+  localStorage.removeItem(KEY);
+}

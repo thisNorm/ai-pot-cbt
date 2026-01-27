@@ -35,7 +35,12 @@ export default function ViewerSetup() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-xl mx-auto p-6 space-y-4">
-        <h1 className="text-2xl font-bold">문제보기 설정</h1>
+        <div className="flex items-center justify-between">
+          <h1 className="text-2xl font-bold">문제보기 설정</h1>
+          <button onClick={() => router.push("/")} className="text-sm underline">
+            홈
+          </button>
+        </div>
 
         <div className="bg-white border rounded-2xl shadow p-5 space-y-4">
           <div className="space-y-2">

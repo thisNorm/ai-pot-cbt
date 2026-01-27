@@ -1,11 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { loadQuestions, Question, shuffle } from "@/lib/questions";
-import { addWrong } from "@/lib/wrongNotes";
+import { addWrong, getWrongMap } from "@/lib/wrongNotes";
 import { useSearchParams, useRouter } from "next/navigation";
 
 const CHOICES = ["①", "②", "③", "④"];
+const NOTICE_QUESTION_ID = "1급-B형-샘플_37번";
+const NOTICE_TEXT = "한글 또는 영어 중 하나의 답만 입력해 주세요.";
 
 // ---- 주관식 자동채점용: 입력/정답 정규화 ----
 function normalizeText(s: string) {
@@ -28,8 +30,14 @@ function gradeSubjective(input: string, answers: string[]) {
 
 // Question 타입 확장(로컬 JSON에서 type/answers 들어올 수 있음)
 type QuestionExt = Question & {
-  type?: "choice" | "subjective";
+  type?: "choice" | "subjective" | "free";
   answers?: string[]; // 주관식 정답 후보들
+  inputs?: string[];
+};
+
+const getQuestionNumber = (id?: string) => {
+  const match = /_(\d+)번/.exec(id ?? "");
+  return match ? Number(match[1]) : null;
 };
 
 export default function PracticePage() {
@@ -39,14 +47,22 @@ export default function PracticePage() {
   const level = Number(sp.get("level") ?? "1") as 1 | 2;
   const sessionId = sp.get("sessionId") ?? "";
   const count = Math.max(1, Number(sp.get("count") ?? "20"));
-  const mode = (sp.get("mode") ?? "single") as "single" | "mock";
+  const mode = (sp.get("mode") ?? "single") as "single" | "mock" | "overnight";
   const sessionsParam = sp.get("sessions") ?? "";
-  const selectedSessions = sessionsParam
-    ? sessionsParam.split(",").map((s) => s.trim()).filter(Boolean)
-    : [];
+  const selectedSessions = useMemo(() => {
+    return sessionsParam
+      ? sessionsParam.split(",").map((s) => s.trim()).filter(Boolean)
+      : [];
+  }, [sessionsParam]);
+  const isSampleSession = mode === "single" && sessionId.includes("샘플");
 
   const [pool, setPool] = useState<QuestionExt[]>([]);
   const [idx, setIdx] = useState(0);
+  const [score, setScore] = useState(0);
+  const [maxScore, setMaxScore] = useState(0);
+  const [correctCount, setCorrectCount] = useState(0);
+  const [finished, setFinished] = useState(false);
+  const [wrongMap, setWrongMap] = useState<Record<string, { isActive: boolean }>>({});
 
   // 공통 상태
   const [revealed, setRevealed] = useState(false);
@@ -58,12 +74,34 @@ export default function PracticePage() {
   // 주관식 상태
   const [textAnswer, setTextAnswer] = useState("");
   const [subjectiveCorrect, setSubjectiveCorrect] = useState<boolean | null>(null);
+  const [freeSubmitted, setFreeSubmitted] = useState(false);
+  const [groupInputs, setGroupInputs] = useState<Record<number, string>>({});
+  const [groupResults, setGroupResults] = useState<Record<number, boolean> | null>(null);
 
   useEffect(() => {
     loadQuestions()
       .then((qs) => {
         let filtered: QuestionExt[] = [];
         if (mode === "mock") {
+          filtered = (qs as QuestionExt[]).filter(
+            (q) => q.level === level && selectedSessions.includes(q.sessionId)
+          );
+          if (level === 1) {
+            const choices = filtered.filter((q) => q.type !== "subjective");
+            const subjectives = filtered.filter((q) => q.type === "subjective");
+            const picked = [
+              ...shuffle(choices).slice(0, Math.min(35, choices.length)),
+              ...shuffle(subjectives).slice(0, Math.min(5, subjectives.length)),
+            ];
+            setPool(shuffle(picked));
+            setIdx(0);
+            setScore(0);
+            setMaxScore(0);
+            setCorrectCount(0);
+            setFinished(false);
+            return;
+          }
+        } else if (mode === "overnight") {
           filtered = (qs as QuestionExt[]).filter(
             (q) => selectedSessions.includes(q.sessionId)
           );
@@ -72,15 +110,67 @@ export default function PracticePage() {
             (q) => q.level === level && q.sessionId === sessionId
           );
         }
-        const picked = shuffle(filtered).slice(0, Math.min(count, filtered.length));
+        let picked = shuffle(filtered).slice(0, Math.min(count, filtered.length));
+        if (mode === "single") {
+          const groups = new Map<string, QuestionExt[]>();
+          filtered.forEach((item) => {
+            const key = item.questionImage ?? item.id;
+            if (!groups.has(key)) groups.set(key, []);
+            groups.get(key)!.push(item);
+          });
+          const shuffledKeys = shuffle(Array.from(groups.keys()));
+          picked = shuffledKeys.flatMap((key) => {
+            const items = groups.get(key) ?? [];
+            return items.sort((a, b) => (getQuestionNumber(a.id) ?? 0) - (getQuestionNumber(b.id) ?? 0));
+          });
+        }
+        const max = picked.reduce((sum, q) => {
+          if (mode === "overnight" || mode === "mock") return sum;
+          if (level === 1) return sum + (q.type === "subjective" ? 4 : 1);
+          const weight = getYearPoint(q, level);
+          return sum + weight;
+        }, 0);
         setPool(picked);
         setIdx(0);
+        setScore(0);
+        setMaxScore(max);
+        setCorrectCount(0);
+        setFinished(false);
       })
       .catch((e) => alert(e.message));
   }, [level, sessionId, count, mode, selectedSessions]);
 
+  useEffect(() => {
+    setWrongMap(getWrongMap());
+  }, [idx, sessionId, mode]);
+
   const q = pool[idx];
   const total = pool.length;
+  const isWrongNote = q ? !!wrongMap[q.id]?.isActive : false;
+  const noticeText = q?.id === NOTICE_QUESTION_ID ? NOTICE_TEXT : null;
+  const groupInfo = useMemo(() => {
+    if (!q?.questionImage) return { isGroup: false, items: [] as QuestionExt[], indices: [] as number[] };
+    const match = /_(\d+)~(\d+)번/.exec(q.questionImage);
+    if (!match) return { isGroup: false, items: [] as QuestionExt[], indices: [] as number[] };
+    const start = Number(match[1]);
+    const end = Number(match[2]);
+    const items = pool
+      .filter(
+        (item) =>
+          item.sessionId === q.sessionId &&
+          item.questionImage === q.questionImage &&
+          (() => {
+            const num = getQuestionNumber(item.id);
+            return num !== null && num >= start && num <= end;
+          })()
+      )
+      .sort((a, b) => (getQuestionNumber(a.id) ?? 0) - (getQuestionNumber(b.id) ?? 0));
+    const indices = items
+      .map((item) => pool.indexOf(item))
+      .filter((i) => i >= 0)
+      .sort((a, b) => a - b);
+    return { isGroup: items.length > 1, items, indices, start, end };
+  }, [q, pool]);
 
   const resetForNext = () => {
     setSelectedChoices([]);
@@ -89,15 +179,62 @@ export default function PracticePage() {
 
     setTextAnswer("");
     setSubjectiveCorrect(null);
+    setFreeSubmitted(false);
+    setGroupInputs({});
+    setGroupResults(null);
   };
 
   const next = () => {
     if (idx + 1 >= total) {
+      if (mode === "mock" || mode === "overnight") {
+        setFinished(true);
+        return;
+      }
+      if (isSampleSession) {
+        setFinished(true);
+        return;
+      }
       router.push("/wrong");
+      return;
+    }
+    if (groupInfo.isGroup && groupInfo.indices.length > 0) {
+      const maxIndex = groupInfo.indices[groupInfo.indices.length - 1];
+      const nextIndex = Math.min(maxIndex + 1, total - 1);
+      setIdx(nextIndex);
+      resetForNext();
       return;
     }
     setIdx((v) => v + 1);
     resetForNext();
+  };
+
+  const getYearPoint = (question: QuestionExt, lvl: 1 | 2) => {
+    if (lvl === 1) return question.type === "subjective" ? 4 : 1;
+    const level2OnePoints: Record<string, Set<number>> = {
+      "제2401회_2급": new Set([1, 3, 4, 5, 6, 11, 13, 14, 22, 25, 26, 33, 34, 35, 41, 44, 50, 56]),
+      "제2402회_2급": new Set([1, 3, 6, 7, 9, 12, 14, 15, 17, 18, 20, 26, 28, 36, 43, 45, 46, 51, 52]),
+      "제2501회_2급": new Set([1, 2, 8, 10, 13, 15, 17, 19, 22, 26, 32, 38, 43, 44, 46, 48, 49, 53]),
+      "제2502회_2급": new Set([1, 2, 6, 9, 12, 16, 20, 22, 27, 31, 35, 39, 42, 48, 49, 52, 53, 55, 56, 58]),
+    };
+    const match = /_(\d+)번/.exec(question.id ?? "");
+    const number = match ? Number(match[1]) : null;
+    const onePointSet = level2OnePoints[question.sessionId];
+    if (!onePointSet || !number) return 1;
+    return onePointSet.has(number) ? 1 : 2;
+  };
+
+  const addScoreIfNeeded = (question: QuestionExt, isCorrect: boolean) => {
+    if (mode === "mock" || mode === "overnight") {
+      if (isCorrect) setCorrectCount((s) => s + 1);
+      return;
+    }
+    if (isSampleSession) {
+      if (isCorrect) setCorrectCount((s) => s + 1);
+      return;
+    }
+    if (!isCorrect) return;
+    const point = getYearPoint(question, level);
+    setScore((s) => s + point);
   };
 
   // ---------------- 객관식 ----------------
@@ -115,6 +252,7 @@ export default function PracticePage() {
 
       const isCorrect = choiceIdx === q.answerIndex;
       if (!isCorrect) addWrong(q.id);
+      addScoreIfNeeded(q, isCorrect);
       return;
     }
 
@@ -135,6 +273,7 @@ export default function PracticePage() {
         sortedNext.length === sortedAnswer.length &&
         sortedNext.every((v, i) => v === sortedAnswer[i]);
       if (!isCorrect) addWrong(q.id);
+      addScoreIfNeeded(q, isCorrect);
     }
   };
 
@@ -168,18 +307,74 @@ export default function PracticePage() {
     setRevealed(true);
 
     if (!ok) addWrong(q.id);
+    addScoreIfNeeded(q, ok);
   };
 
+  const submitGroupSubjective = () => {
+    if (!groupInfo.isGroup || revealed) return;
+    const results: Record<number, boolean> = {};
+    groupInfo.items.forEach((item) => {
+      const num = getQuestionNumber(item.id);
+      if (num === null) return;
+      const answers = Array.isArray(item.answers) ? item.answers : [];
+      const ok = gradeSubjective(groupInputs[num] ?? "", answers);
+      results[num] = ok;
+      if (!ok) addWrong(item.id);
+      addScoreIfNeeded(item, ok);
+    });
+    setGroupResults(results);
+    setRevealed(true);
+  };
   // type이 없으면 기본은 객관식으로 처리
-  const qType: "choice" | "subjective" = q?.type === "subjective" ? "subjective" : "choice";
+  const qType: "choice" | "subjective" | "free" =
+    q?.type === "subjective" ? "subjective" : q?.type === "free" ? "free" : "choice";
 
-  if (!sessionId && mode !== "mock") {
+  if (!sessionId && mode === "single") {
     return (
       <div className="p-6">
         sessionId가 없어요.{" "}
         <a className="underline" href="/practice/setup">
           설정으로
         </a>
+      </div>
+    );
+  }
+
+  if (finished && isSampleSession) {
+    return (
+      <div className="min-h-screen bg-gray-50 p-6">
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-white border rounded-2xl p-6 space-y-3">
+            <div className="text-sm text-gray-600">{sessionId} · 샘플문제 · {total}문항</div>
+            <div className="text-2xl font-bold">
+              맞은 개수 {correctCount} / {total}
+            </div>
+            <div className="text-xs text-gray-500">샘플문제라 점수 부여가 되어 있지 않습니다.</div>
+            <button onClick={() => router.push("/")} className="mt-2 underline text-sm">
+              홈으로
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (finished && (mode === "mock" || mode === "overnight")) {
+    return (
+      <div className="min-h-screen bg-gray-50 p-6">
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-white border rounded-2xl p-6 space-y-3">
+            <div className="text-sm text-gray-600">
+              {mode === "mock" ? `${level}급 모의고사` : "밤샘문풀"} · {total}문항
+            </div>
+            <div className="text-2xl font-bold">
+              맞은 개수 {correctCount} / {total}
+            </div>
+            <button onClick={() => router.push("/")} className="mt-2 underline text-sm">
+              홈으로
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
@@ -202,6 +397,77 @@ export default function PracticePage() {
     );
   }
 
+  if (qType === "free") {
+    const inputLabels = Array.isArray(q.inputs) && q.inputs.length > 0 ? q.inputs : ["답안"];
+    return (
+      <div className="min-h-screen bg-gray-50">
+        <div className="max-w-3xl mx-auto p-6 space-y-4">
+          <div className="flex items-center justify-between">
+            <div className="text-sm text-gray-600">
+              {(mode === "mock" ? "모의고사" : mode === "overnight" ? "밤샘문풀" : sessionId)} · {level}급 ·{" "}
+              {idx + 1}/{total}
+            </div>
+            {isWrongNote && (
+              <div className="text-xs text-red-700 font-semibold bg-red-100 px-2 py-0.5 rounded-full">
+                ★ 틀렸던 문제
+              </div>
+            )}
+            <button onClick={() => router.push("/")} className="text-sm underline">
+              홈
+            </button>
+          </div>
+
+          <div className="bg-white border rounded-2xl shadow p-4 space-y-4">
+            <img src={q.questionImage} alt="question" className="w-full rounded-xl border" />
+            {noticeText && <div className="text-xs text-gray-600">{noticeText}</div>}
+
+            <div className="space-y-2">
+              {inputLabels.map((label, i) => (
+                <div key={i} className="space-y-1">
+                  <div className="text-sm text-gray-600">{label}</div>
+                  <input className="w-full border rounded-xl p-3" />
+                </div>
+              ))}
+            </div>
+
+            <div className="flex gap-2 items-center">
+              {!freeSubmitted ? (
+                <button
+                  onClick={() => setFreeSubmitted(true)}
+                  className="bg-blue-600 text-white rounded-xl px-4 py-2"
+                >
+                  채점
+                </button>
+              ) : (
+                q.explainImage && (
+                  <button
+                    onClick={() => setShowExplain((v) => !v)}
+                    className="border rounded-xl px-4 py-2"
+                  >
+                    {showExplain ? "해설 닫기" : "해설 보기"}
+                  </button>
+                )
+              )}
+              <button
+                onClick={next}
+                className="ml-auto bg-blue-600 text-white rounded-xl px-4 py-2"
+              >
+                {idx + 1 >= total ? "끝내기" : "다음"}
+              </button>
+            </div>
+            <div className="text-xs text-gray-500">서술형은 채점이 되지 않습니다.</div>
+
+            {showExplain && q.explainImage && (
+              <div className="pt-2">
+                <img src={q.explainImage} alt="explanation" className="w-full rounded-xl border" />
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   // ==========================
   // ✅ 주관식 화면
   // ==========================
@@ -213,6 +479,11 @@ export default function PracticePage() {
             <div className="text-sm text-gray-600">
               {(mode === "mock" ? "모의고사" : sessionId)} · {level}급 · {idx + 1}/{total} · 주관식
             </div>
+            {isWrongNote && (
+              <div className="text-xs text-red-700 font-semibold bg-red-100 px-2 py-0.5 rounded-full">
+                ★ 틀렸던 문제
+              </div>
+            )}
             <button onClick={() => router.push("/")} className="text-sm underline">
               홈
             </button>
@@ -220,34 +491,85 @@ export default function PracticePage() {
 
           <div className="bg-white border rounded-2xl shadow p-4 space-y-4">
             <img src={q.questionImage} alt="question" className="w-full rounded-xl border" />
+            {noticeText && <div className="text-xs text-gray-600">{noticeText}</div>}
 
-            <div className="space-y-2">
-              <div className="text-sm text-gray-600">답안 입력</div>
-              <input
-                value={textAnswer}
-                onChange={(e) => setTextAnswer(e.target.value)}
-                placeholder="답을 입력하세요"
-                className="w-full border rounded-xl p-3"
-                disabled={revealed}
-              />
-              <div className="text-xs text-gray-500">
-                * 대소문자/공백 차이는 무시하고 채점합니다. (예: Archive, archive 모두 정답 처리)
+            {groupInfo.isGroup ? (
+              <div className="space-y-3">
+                {groupInfo.items.map((item) => {
+                  const num = getQuestionNumber(item.id);
+                  if (num === null) return null;
+                  const isCorrect = groupResults ? groupResults[num] : null;
+                  return (
+                    <div key={item.id} className="space-y-1">
+                      <div className="text-sm text-gray-600">{num}. 입력</div>
+                      <input
+                        value={groupInputs[num] ?? ""}
+                        onChange={(e) =>
+                          setGroupInputs((prev) => ({ ...prev, [num]: e.target.value }))
+                        }
+                        placeholder="답을 입력하세요"
+                        className="w-full border rounded-xl p-3"
+                        disabled={revealed}
+                      />
+                      {isCorrect !== null && (
+                        <div className="text-xs">
+                          {isCorrect ? "✅ 정답" : "❌ 오답"}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+                <div className="text-xs text-gray-500">
+                  * 대소문자/공백 차이는 무시하고 채점합니다.
+                </div>
               </div>
-            </div>
+            ) : (
+              <div className="space-y-2">
+                <div className="text-sm text-gray-600">
+                  {(() => {
+                    const match = /_(\d+)번/.exec(q.id ?? "");
+                    return match ? `${match[1]}. 입력` : "답안 입력";
+                  })()}
+                </div>
+                <input
+                  value={textAnswer}
+                  onChange={(e) => setTextAnswer(e.target.value)}
+                  placeholder="답을 입력하세요"
+                  className="w-full border rounded-xl p-3"
+                  disabled={revealed}
+                />
+                <div className="text-xs text-gray-500">
+                  * 대소문자/공백 차이는 무시하고 채점합니다.
+                </div>
+              </div>
+            )}
 
             {!revealed ? (
               <button
-                onClick={submitSubjective}
+                onClick={groupInfo.isGroup ? submitGroupSubjective : submitSubjective}
                 className="bg-blue-600 text-white rounded-xl px-4 py-2"
-                disabled={!textAnswer.trim()}
-                title={!textAnswer.trim() ? "답을 입력하세요" : ""}
+                disabled={
+                  groupInfo.isGroup
+                    ? groupInfo.items.some(
+                        (item) => {
+                          const num = getQuestionNumber(item.id);
+                          return num !== null && !(groupInputs[num] ?? "").trim();
+                        }
+                      )
+                    : !textAnswer.trim()
+                }
+                title={
+                  groupInfo.isGroup ? "답을 입력하세요" : !textAnswer.trim() ? "답을 입력하세요" : ""
+                }
               >
                 제출
               </button>
             ) : (
-              <div className="text-sm">
-                {subjectiveCorrect ? "✅ 정답" : "❌ 오답"}
-              </div>
+              !groupInfo.isGroup && (
+                <div className="text-sm">
+                  {subjectiveCorrect ? "✅ 정답" : "❌ 오답"}
+                </div>
+              )
             )}
 
             <div className="flex gap-2">
@@ -291,6 +613,11 @@ export default function PracticePage() {
           <div className="text-sm text-gray-600">
             {(mode === "mock" ? "모의고사" : sessionId)} · {level}급 · {idx + 1}/{total}
           </div>
+          {isWrongNote && (
+              <div className="text-xs text-red-700 font-semibold bg-red-100 px-2 py-0.5 rounded-full">
+                ★ 틀렸던 문제
+              </div>
+          )}
           <button onClick={() => router.push("/")} className="text-sm underline">
             홈
           </button>
@@ -298,6 +625,7 @@ export default function PracticePage() {
 
         <div className="bg-white border rounded-2xl shadow p-4 space-y-4">
           <img src={q.questionImage} alt="question" className="w-full rounded-xl border" />
+          {noticeText && <div className="text-xs text-gray-600">{noticeText}</div>}
 
           <div className="grid gap-2">
             {(() => {

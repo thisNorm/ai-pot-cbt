@@ -9,7 +9,7 @@ export default function PracticeSetup() {
   const [level, setLevel] = useState<1 | 2>(1);
   const [questions, setQuestions] = useState<any[]>([]);
   const [sessionId, setSessionId] = useState<string>("");
-  const [mode, setMode] = useState<"single" | "mock">("single");
+  const [mode, setMode] = useState<"single" | "mock" | "overnight">("single");
   const [selectedSessions, setSelectedSessions] = useState<string[]>([]);
   const [countAuto, setCountAuto] = useState(true);
   const [count, setCount] = useState<number>(20); // 원하는 만큼
@@ -31,6 +31,10 @@ export default function PracticeSetup() {
       .sort((a, b) => (a[0] < b[0] ? 1 : -1))
       .map(([id, total]) => ({ id, total }));
   }, [questions]);
+  const levelAllSessions = useMemo(
+    () => allSessions.filter((s) => sessions.includes(s.id)),
+    [allSessions, sessions]
+  );
   const levelSessionCounts = useMemo(() => {
     const map = new Map<string, number>();
     (questions as any[]).forEach((q) => {
@@ -47,18 +51,49 @@ export default function PracticeSetup() {
   }, [sessions]);
 
   useEffect(() => {
+    if (mode !== "mock") return;
+    if (selectedSessions.length > 0) return;
+    const allIds = levelAllSessions.map((s) => s.id);
+    if (allIds.length > 0) {
+      setSelectedSessions(allIds);
+      setCountAuto(true);
+    }
+  }, [mode, levelAllSessions, selectedSessions.length]);
+
+  useEffect(() => {
     if (!countAuto) return;
+    if (mode === "overnight") {
+      const total = selectedSessions.reduce((sum, id) => {
+        const found = allSessions.find((s) => s.id === id);
+        return sum + (found?.total ?? 0);
+      }, 0);
+      setCount(total);
+      return;
+    }
     if (mode === "single") {
       const nextCount = levelSessionCounts.get(sessionId) ?? count;
       setCount(nextCount);
       return;
     }
-    const total = selectedSessions.reduce((sum, id) => {
-      const found = allSessions.find((s) => s.id === id);
-      return sum + (found?.total ?? 0);
-    }, 0);
-    setCount(total);
-  }, [mode, sessionId, selectedSessions, levelSessionCounts, allSessions, countAuto, count]);
+    if (level === 1) {
+      setCount(40);
+      return;
+    }
+    if (level === 2) {
+      setCount(40);
+      return;
+    }
+  }, [
+    mode,
+    sessionId,
+    selectedSessions,
+    levelAllSessions,
+    levelSessionCounts,
+    allSessions,
+    countAuto,
+    count,
+    level,
+  ]);
 
   const start = () => {
     if (mode === "single") {
@@ -69,15 +104,34 @@ export default function PracticeSetup() {
       return;
     }
     if (selectedSessions.length === 0) return alert("모의고사 회차를 선택하세요");
+    const totalSelected = selectedSessions.reduce((sum, id) => {
+      const found = levelAllSessions.find((s) => s.id === id);
+      return sum + (found?.total ?? 0);
+    }, 0);
+    if (level === 1 && totalSelected < 85) {
+      return alert("선택한 회차의 총 문항 수가 85문항보다 적습니다. 더 골라주세요.");
+    }
     router.push(
       `/practice?level=${level}&sessions=${encodeURIComponent(selectedSessions.join(","))}&count=${count}&mode=mock`
+    );
+  };
+
+  const startOvernight = () => {
+    if (selectedSessions.length === 0) return alert("밤샘문풀 회차를 선택하세요");
+    router.push(
+      `/practice?mode=overnight&sessions=${encodeURIComponent(selectedSessions.join(","))}&count=${count}`
     );
   };
 
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-xl mx-auto p-6 space-y-4">
-        <h1 className="text-2xl font-bold">문제풀기 설정</h1>
+        <div className="flex items-center justify-between">
+          <h1 className="text-2xl font-bold">문제풀기 설정</h1>
+          <button onClick={() => router.push("/")} className="text-sm underline">
+            홈
+          </button>
+        </div>
 
         <div className="bg-white border rounded-2xl shadow p-5 space-y-4">
           <div className="space-y-2">
@@ -85,24 +139,26 @@ export default function PracticeSetup() {
             <div className="flex gap-2">
               <button
                 className={`px-4 py-2 rounded-xl border ${
-                  mode === "single" && level === 1 ? "bg-black text-white" : "bg-white"
+                  mode !== "overnight" && level === 1 ? "bg-black text-white" : "bg-white"
                 }`}
                 onClick={() => {
                   setLevel(1);
                   setMode("single");
                   setCountAuto(true);
+                  setSelectedSessions([]);
                 }}
               >
                 1급
               </button>
               <button
                 className={`px-4 py-2 rounded-xl border ${
-                  mode === "single" && level === 2 ? "bg-black text-white" : "bg-white"
+                  mode !== "overnight" && level === 2 ? "bg-black text-white" : "bg-white"
                 }`}
                 onClick={() => {
                   setLevel(2);
                   setMode("single");
                   setCountAuto(true);
+                  setSelectedSessions([]);
                 }}
               >
                 2급
@@ -112,9 +168,22 @@ export default function PracticeSetup() {
                 onClick={() => {
                   setMode("mock");
                   setCountAuto(true);
+                  const allIds = levelAllSessions.map((s) => s.id);
+                  if (allIds.length > 0) setSelectedSessions(allIds);
                 }}
               >
                 모의고사
+              </button>
+              <button
+                className={`px-4 py-2 rounded-xl border ${mode === "overnight" ? "bg-black text-white" : "bg-white"}`}
+                onClick={() => {
+                  setMode("overnight");
+                  setCountAuto(true);
+                  const allIds = allSessions.map((s) => s.id);
+                  if (allIds.length > 0) setSelectedSessions(allIds);
+                }}
+              >
+                밤샘문풀
               </button>
             </div>
           </div>
@@ -142,9 +211,11 @@ export default function PracticeSetup() {
             </div>
           ) : (
             <div className="space-y-2">
-              <div className="text-sm text-gray-600">모의고사 범위</div>
+              <div className="text-sm text-gray-600">
+                {mode === "overnight" ? "밤샘문풀 범위" : "모의고사 범위"}
+              </div>
               <div className="border rounded-xl max-h-56 overflow-auto">
-                {allSessions.map((s) => {
+                {(mode === "overnight" ? allSessions : levelAllSessions).map((s) => {
                   const checked = selectedSessions.includes(s.id);
                   return (
                     <label key={s.id} className="flex items-center gap-3 px-3 py-2 border-b last:border-b-0">
@@ -164,7 +235,7 @@ export default function PracticeSetup() {
                     </label>
                   );
                 })}
-                {allSessions.length === 0 && (
+                {(mode === "overnight" ? allSessions : levelAllSessions).length === 0 && (
                   <div className="text-xs text-gray-500 p-3">등록된 회차가 없어요.</div>
                 )}
               </div>
@@ -183,16 +254,26 @@ export default function PracticeSetup() {
                 setCountAuto(false);
               }}
               className="w-full border rounded-xl px-3 py-2"
+              disabled={mode === "mock" && (level === 1 || level === 2)}
             />
             <div className="text-xs text-gray-500">선택된 회차 내에서 랜덤으로 섞어서 출제</div>
           </div>
 
-          <button
-            onClick={start}
-            className="w-full bg-blue-600 text-white py-3 rounded-2xl"
-          >
-            문제풀기
-          </button>
+          {mode === "overnight" ? (
+            <button
+              onClick={startOvernight}
+              className="w-full bg-blue-600 text-white py-3 rounded-2xl"
+            >
+              문제풀기
+            </button>
+          ) : (
+            <button
+              onClick={start}
+              className="w-full bg-blue-600 text-white py-3 rounded-2xl"
+            >
+              문제풀기
+            </button>
+          )}
         </div>
       </div>
     </div>

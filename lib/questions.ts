@@ -7,8 +7,9 @@ export type Question = {
   answerIndex: number; // 0~3
   answerIndexes?: number[];
   selectCount?: number;
-  type?: "choice" | "subjective";
+  type?: "choice" | "subjective" | "free";
   answers?: string[];
+  inputs?: string[];
 };
 
 export async function loadQuestions(): Promise<Question[]> {
