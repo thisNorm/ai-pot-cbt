@@ -70,6 +70,7 @@ function hasKeyword(value) {
 
 function isSubjective({ pathParts, fileName, originalName, number, subjectiveRanges }) {
   if (subjectiveRanges && subjectiveRanges.has(number)) return true;
+  if (number >= 81 && number <= 85) return true;
   if (hasKeyword(fileName) || hasKeyword(originalName)) return true;
   return pathParts.some((part) => hasKeyword(part));
 }
