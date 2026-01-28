@@ -31,8 +31,8 @@ function gradeSubjective(input: string, answers: string[]) {
 // Question 타입 확장(로컬 JSON에서 type/answers 들어올 수 있음)
 type QuestionExt = Question & {
   type?: "choice" | "subjective" | "free";
-  answers?: string[]; // 주관식 정답 후보들
-  inputs?: string[];
+  answers?: string[]; // ???????? ?????  inputs?: string[];
+  explainText?: string;
 };
 
 const getQuestionNumber = (id?: string) => {
@@ -512,8 +512,13 @@ export default function PracticePage() {
                         disabled={revealed}
                       />
                       {isCorrect !== null && (
-                        <div className="text-xs">
-                          {isCorrect ? "✅ 정답" : "❌ 오답"}
+                        <div className="text-xs space-y-1">
+                          <div>{isCorrect ? "✅ 정답" : "❌ 오답"}</div>
+                          {Array.isArray(item.answers) && item.answers.length > 0 && (
+                            <div className="text-gray-600">
+                              정답: {item.answers.join(" / ")}
+                            </div>
+                          )}
                         </div>
                       )}
                     </div>
@@ -566,14 +571,27 @@ export default function PracticePage() {
               </button>
             ) : (
               !groupInfo.isGroup && (
-                <div className="text-sm">
-                  {subjectiveCorrect ? "✅ 정답" : "❌ 오답"}
+                <div className="text-sm space-y-1">
+                  <div>{subjectiveCorrect ? "✅ 정답" : "❌ 오답"}</div>
+                  {Array.isArray(q.answers) && q.answers.length > 0 && (
+                    <div className="text-xs text-gray-600">
+                      정답: {q.answers.join(" / ")}
+                    </div>
+                  )}
                 </div>
               )
             )}
 
             <div className="flex gap-2">
               {q.explainImage && revealed && (
+                <button
+                  onClick={() => setShowExplain((v) => !v)}
+                  className="border rounded-xl px-4 py-2"
+                >
+                  {showExplain ? "해설 닫기" : "해설 보기"}
+                </button>
+              )}
+              {!q.explainImage && q.explainText && revealed && (
                 <button
                   onClick={() => setShowExplain((v) => !v)}
                   className="border rounded-xl px-4 py-2"
@@ -595,6 +613,21 @@ export default function PracticePage() {
             {showExplain && q.explainImage && (
               <div className="pt-2">
                 <img src={q.explainImage} alt="explanation" className="w-full rounded-xl border" />
+              </div>
+            )}
+            {showExplain && !q.explainImage && q.explainText && (
+              <div className="pt-2 text-base text-black leading-relaxed whitespace-pre-line space-y-1">
+                <div className="font-semibold">
+                  [정답] {(() => {
+                    const answerIndexes =
+                      Array.isArray(q.answerIndexes) && q.answerIndexes.length > 0
+                        ? q.answerIndexes
+                        : [q.answerIndex];
+                    const labels = answerIndexes.map((i) => CHOICES[i]).join(", ");
+                    return labels;
+                  })()}번
+                </div>
+                <div>[해설] {q.explainText}</div>
               </div>
             )}
           </div>
@@ -667,7 +700,7 @@ export default function PracticePage() {
           )}
 
           <div className="flex gap-2">
-            {q.explainImage && revealed && (
+            {revealed && (q.explainImage || q.explainText || (groupInfo.isGroup && groupInfo.items.some((item) => item.explainText))) && (
               <button
                 onClick={() => setShowExplain((v) => !v)}
                 className="border rounded-xl px-4 py-2"
@@ -689,6 +722,48 @@ export default function PracticePage() {
           {showExplain && q.explainImage && (
             <div className="pt-2">
               <img src={q.explainImage} alt="explanation" className="w-full rounded-xl border" />
+            </div>
+          )}
+          {showExplain && !q.explainImage && q.explainText && (
+            <div className="pt-2 text-base text-black leading-relaxed whitespace-pre-line space-y-1">
+              <div className="font-semibold">
+                [정답] {(() => {
+                  const answerIndexes =
+                    Array.isArray(q.answerIndexes) && q.answerIndexes.length > 0
+                      ? q.answerIndexes
+                      : [q.answerIndex];
+                  const labels = answerIndexes.map((i) => CHOICES[i]).join(", ");
+                  return labels;
+                })()}번
+              </div>
+              <div>[해설] {q.explainText}</div>
+            </div>
+          )}
+          {showExplain && !q.explainImage && !q.explainText && !groupInfo.isGroup && (
+            <div className="pt-2 text-base text-black">[해설] 준비 중입니다.</div>
+          )}
+          {showExplain && groupInfo.isGroup && !q.explainImage && (
+            <div className="pt-2 text-base text-black leading-relaxed whitespace-pre-line space-y-2">
+              {groupInfo.items.map((item) => {
+                if (!item.explainText) return null;
+                const num = getQuestionNumber(item.id);
+                return (
+                  <div key={item.id}>
+                    <div className="font-semibold">
+                      [정답] {(() => {
+                        const answerIndexes =
+                          Array.isArray(item.answerIndexes) && item.answerIndexes.length > 0
+                            ? item.answerIndexes
+                            : [item.answerIndex];
+                        const labels = answerIndexes.map((i) => CHOICES[i]).join(", ");
+                        return labels;
+                      })()}번
+                      {num ? ` (${num}번)` : ""}
+                    </div>
+                    <div>[해설] {item.explainText}</div>
+                  </div>
+                );
+              })}
             </div>
           )}
         </div>
