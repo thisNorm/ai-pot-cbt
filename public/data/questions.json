@@ -15,7 +15,8 @@
     "type": "choice",
     "questionImage": "/questions/1급-A형-샘플/1급-A형-샘플_2번.png",
     "explainImage": "/explanations/1급-A형-샘플/1급-A형-샘플_2번.png",
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "자율성 측면에서, 에이전트형 AI는 스스로 목표 설정 및 실행이 가능하며, 기존 AI는 자율성이 없어 사용자의 입력이 필요하다."
   },
   {
     "id": "1급-A형-샘플_3번",
@@ -1760,754 +1761,753 @@
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_1번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "트랜스포머는 Self-Attention을 사용해 장기 의존성 문제와 그래디언트 소실 문제를 극복했으며, 이는 주로 RNN 계열 모델의 한계이다."
   },
   {
     "id": "제2401회_1급_2번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_2번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "좋은 프롬프트는 원하는 출력의 형식과 스타일을 구체적으로 제시하여 언어 모델의 응답을 정확하게 유도하는 것이 중요하다."
   },
   {
     "id": "제2401회_1급_3번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_3번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "프롬프트를 길게 작성하면 토큰 사용량이 증가하여 비용 절감이 아니라 오히려 비용이 증가한다."
   },
   {
     "id": "제2401회_1급_4번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_4번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "단순 요약 요청은 특정 역할이나 관점을 부여하는 페르소나 기반 프롬프트에 해당하지 않는다."
   },
   {
     "id": "제2401회_1급_5번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_5번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "BERT는 문장 이해에 특화된 모델로, 질문 응답이나 문서 분류에는 적합하지만 텍스트 생성 모델은 아니다."
   },
   {
     "id": "제2401회_1급_6번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_6번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "GPT는 사전학습과 RLHF를 통해 최적화되었으며, 자동 생성 데이터로 스스로 검증하는 자기지도학습 방식은 사용되지 않았다."
   },
   {
     "id": "제2401회_1급_7번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_7번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "Seq2Seq 모델은 RNN 기반 구조로 인해 긴 시퀀스를 처리할 때 장기 의존성 문제로 성능 저하가 발생할 수 있다."
   },
   {
     "id": "제2401회_1급_8번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_8번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "트랜스포머는 순환 구조를 사용하지 않으며, Self-Attention과 병렬 처리를 통해 문맥을 이해한다."
   },
   {
     "id": "제2401회_1급_9번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_9번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "트랜스포머는 단어의 순서 정보를 전달하기 위해 위치 인코딩(Position Encoding)을 사용하므로, 위치 정보가 필요 없다는 설명은 틀리다."
   },
   {
     "id": "제2401회_1급_10번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_10번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "BERT는 다음 단어를 예측하는 단방향 언어 모델이 아니라, 문맥을 양방향으로 이해하는 인코더 기반 모델이다."
   },
   {
     "id": "제2401회_1급_11번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_11번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "강화학습 기반 미세조정은 사람의 피드백을 활용하는 방식으로, 사용자 피드백 없이 스스로 최적화한다는 설명은 틀리다."
   },
   {
     "id": "제2401회_1급_12번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_12번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "BERT는 텍스트 이해에 특화된 모델로, 멀티모달 데이터를 직접 처리하지는 않는다."
   },
   {
     "id": "제2401회_1급_13번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_13번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "BERT는 다음 단어 예측이 아니라, 마스크드 언어 모델링과 다음 문장 예측 방식으로 학습한다."
   },
   {
     "id": "제2401회_1급_14번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_14번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "프롬프트 패턴은 언어 모델의 내부 구조를 변경하는 것이 아니라, 질문을 전략적으로 구성하는 기법이다."
   },
   {
     "id": "제2401회_1급_15번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_15번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "주제와 관련 없는 정보를 추가하면 오히려 출력 품질이 저하될 수 있으므로 적절한 프롬프트 개선 방법이 아니다."
   },
   {
     "id": "제2401회_1급_16번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_16번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "Game Play 패턴은 보상과 피드백을 통해 참여를 유도하는 방식으로, 단순한 설명 제공은 해당되지 않는다."
   },
   {
     "id": "제2401회_1급_17번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_17번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "입력 형식, 단계별 절차, 최대 길이 등을 명확히 지정하여 결과물을 만들어내는 방식으로 Recipe 패턴에 해당한다."
   },
   {
     "id": "제2401회_1급_18번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_18번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "사용자의 질문을 더 구체적이고 개선된 형태로 재구성하여 응답 품질을 높이므로 Question Refinement 패턴이다."
   },
   {
     "id": "제2401회_1급_19번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_19번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "충분한 정보를 얻을 때까지 질문을 반복하고, 조건이 충족되면 결과를 제공하는 방식으로 상호작용이 구성되어 있다. 이는 질문을 점진적으로 다듬어 가는 Question Refinement 패턴에 해당한다."
   },
   {
     "id": "제2401회_1급_20번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_20번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "입력 길이가 길어질수록 메모리와 계산량이 증가하여 비용과 응답 시간이 늘어날 수 있기 때문이다."
   },
   {
     "id": "제2401회_1급_21번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_21번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "GPT는 단방향 언어 모델로 문맥을 양방향으로 동시에 고려하지 않는다."
   },
   {
     "id": "제2401회_1급_22번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_22번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "시계열 데이터는 과거 정보가 현재와 미래 예측에 영향을 주는 시간적 의존성을 가진다."
   },
   {
     "id": "제2401회_1급_23번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_23번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "페르소나는 가상의 인물을 설정해 특정 사용자나 상황에 맞는 일관된 출력을 유도하기 위해 사용된다."
   },
   {
     "id": "제2401회_1급_24번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_24번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "여러 프롬프트 전략을 결합하여 사용하는 방식이므로 Combining 패턴이다."
   },
   {
     "id": "제2401회_1급_25번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_25번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "가상의 인물을 설정해 사용자 요구와 맥락에 맞는 출력을 유도하는 개념은 페르소나다."
   },
   {
     "id": "제2401회_1급_26번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_26번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "Tail Generation 패턴은 기존 내용의 결말이나 후반부를 생성하는 방식이므로 전체 에세이를 작성하는 예시는 해당하지 않는다."
   },
   {
     "id": "제2401회_1급_27번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_27번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "단계별 절차를 안내하는 패턴이므로 자유로운 사고 과정을 강조한다는 설명은 옳지 않다."
   },
   {
     "id": "제2401회_1급_28번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_28번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "Meta Language Creation 패턴은 새로운 용어나 메타 언어를 정의하여 대화에 활용하는 방식이다."
   },
   {
     "id": "제2401회_1급_29번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_29번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "예시 없이 질문하는 제로샷, 하나의 예시를 제공하는 원샷, 여러 예시를 제공하는 퓨샷 순서가 맞다."
   },
   {
     "id": "제2401회_1급_30번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_30번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "연쇄적 사고 프롬프팅은 복잡한 추론에 적합하며 단순한 철자 오류 수정에는 필요하지 않다."
   },
   {
     "id": "제2401회_1급_31번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_31번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "여러 예시를 제공해 감정 분류를 유도하므로 Few-shot prompting이다."
   },
   {
     "id": "제2401회_1급_32번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_32번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "추론 과정을 단계적으로 수행하고 필요 시 추가 정보를 요청하므로 ReAct 프롬프팅이다."
   },
   {
     "id": "제2401회_1급_33번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_33번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "제로샷 프롬프팅은 예시를 제공하지 않고, 지시문만으로 모델에게 답변을 생성하도록 요청하는 방식이다."
   },
   {
     "id": "제2401회_1급_34번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_34번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "Few-shot 프롬프팅은 예시가 많아질수록 입력 토큰과 계산량이 증가하므로 비용과 응답 속도가 느려질 수 있다. 예시가 많을수록 응답 속도가 빨라진다는 설명은 옳지 않다."
   },
   {
     "id": "제2401회_1급_35번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_35번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "연쇄적 사고 프롬프팅은 단일 프롬프트로 모든 작업을 수행하도록 요구하는 방식이 아니라, 단계별 추론 과정을 유도하는 기법이다."
   },
   {
     "id": "제2401회_1급_36번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_36번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "연쇄적 사고 프롬프팅은 문제를 단계별로 나누어 추론하도록 유도하는 전략이며, 가능한 모든 정보를 한 번에 제공하는 방식은 적절하지 않다."
   },
   {
     "id": "제2401회_1급_37번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_37번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "제시된 프롬프트는 예시(One-shot)와 풀이 과정(Chain-of-Thought)을 함께 보여주며 유도하는 방식이다. 예시를 제공하지 않았다는 설명은 옳지 않다."
   },
   {
     "id": "제2401회_1급_38번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_38번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "거대언어모델(LLM)은 텍스트의 이해와 생성에 특화되어 있다. 음성 데이터를 텍스트로 변환하는 기술은 음성 인식(STT) 모델의 주된 역할이다."
   },
   {
     "id": "제2401회_1급_39번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_39번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "딥러닝 기반 분류 모델은 일반적으로 정답 라벨이 있는 지도 학습(Supervised Learning)을 사용한다. 라벨 없이 자율적으로 학습하는 것은 비지도 학습에 대한 설명이다."
   },
   {
     "id": "제2401회_1급_40번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_40번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "Frozen layer(동결 계층) 기법은 사전 학습된 모델의 저수준 특징(Low-level features)은 유지하고, 새로운 데이터에 맞는 고수준 특징만 빠르게 학습시키기 위해 사용된다."
   },
   {
     "id": "제2401회_1급_41번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_41번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "데이터 분석을 위해서는 데이터의 구조와 특성을 파악하는 것이 우선이다. ChatGPT가 올바른 코드를 작성하거나 분석하려면 컬럼의 구성과 정보를 먼저 요약하게 하는 것이 가장 적절하다."
   },
   {
     "id": "제2401회_1급_42번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_42번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "LLM은 텍스트를 생성하는 모델로, 이미지를 직접 생성하지 않는다. LLM은 이미지 생성 모델(Diffusion Model 등)에 입력할 프롬프트를 구체화하는 데 도움을 주는 역할을 한다."
   },
   {
     "id": "제2401회_1급_43번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_43번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "LLM의 뛰어난 언어 이해 능력을 활용해 사용자 리뷰의 문맥과 감정을 분석하고, 이를 기반으로 개인화된 맞춤형 추천을 제공하는 것이 가장 적절하다."
   },
   {
     "id": "제2401회_1급_44번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_44번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "현대의 NLP 기술과 트랜스포머 아키텍처는 대규모 데이터셋을 학습함으로써 다양한 언어 패턴을 이해하고 성능을 극대화했다. 데이터를 소규모로 제한해야 한다는 설명은 옳지 않다."
   },
   {
     "id": "제2401회_1급_45번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_45번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "감정 사전이나 단순 단어 빈도에 의존하는 방식은 과거의 통계적 기법이다. LLM은 Self-Attention 등을 통해 문맥을 깊이 있게 이해하여 감정을 분석한다."
   },
   {
     "id": "제2401회_1급_46번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_46번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "자율주행차의 사물 인식 기능은 주로 이미지와 영상을 처리하는 컴퓨터 비전 기술을 기반으로 한다. 텍스트 처리가 핵심인 LLM의 주된 활용 사례로 보기에 적절하지 않다."
   },
   {
     "id": "제2401회_1급_47번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_47번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "LLM 애플리케이션 개발 플랫폼은 복잡한 개발, 배포, 관리 과정을 통합하고 간소화하여 빠르고 효율적인 애플리케이션 개발을 가능하게 한다."
   },
   {
     "id": "제2401회_1급_48번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_48번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "LlamaIndex와 LangChain은 LLM 애플리케이션 개발을 위한 오케스트레이션 및 데이터 프레임워크이다. 이를 단순히 프롬프트 최적화 도구로만 한정하여 설명하는 것은 적절하지 않다."
   },
   {
     "id": "제2401회_1급_49번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_49번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "LlamaIndex는 데이터 연결, 인덱싱, 검색(RAG)에 특화된 도구이다. 통계 데이터의 전문적인 시각화 작업은 시각화 전용 도구(Tableau 등)의 역할이다."
   },
   {
     "id": "제2401회_1급_50번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_50번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "프레임워크(LangChain 등)는 추상화를 통해 다양한 모델을 쉽게 교체하고 통합할 수 있게 지원하므로, 모델이 고정되어 코드를 재사용하기 어렵다는 설명은 옳지 않다."
   },
   {
     "id": "제2401회_1급_51번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_51번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "LlamaIndex는 대규모 언어 모델을 데이터 소스에 연결하는 데이터 프레임워크로, 통계 데이터 시각화 기능을 기본적으로 제공하는 도구는 아니다."
   },
   {
     "id": "제2401회_1급_52번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_52번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "RAG(검색증강생성)는 필연적으로 외부 정보를 찾는 '검색' 단계와 이를 바탕으로 답을 만드는 '생성' 단계가 결합된 기술이다. 검색 단계가 없다면 일반적인 생성 모델과 다를 바 없다."
   },
   {
     "id": "제2401회_1급_53번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_53번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "파인 튜닝(Fine-tuning)은 사전 학습된 가중치를 미세 조정하는 과정이다. 모든 가중치를 초기화하고 처음부터 다시 학습하는 것은 사전 학습(Pre-training)에 해당한다."
   },
   {
     "id": "제2401회_1급_54번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_54번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "RAG는 외부 정보를 검색하여 답변의 정확성과 최신성을 보완하는 기술이다. 질문자의 의도(Intent)를 파악하는 능력 자체는 언어 모델의 NLU 능력에 의존하며 RAG가 직접 해결하는 문제는 아니다."
   },
   {
     "id": "제2401회_1급_55번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_55번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "RAG는 검색된 정보를 프롬프트 컨텍스트에 포함시켜 답변을 생성하는 방식이며, 모델 자체의 파라미터(가중치)를 업데이트하지 않는다. 파라미터 업데이트는 파인 튜닝의 특징이다."
   },
   {
     "id": "제2401회_1급_56번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_56번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "웹 사이트 사용성 테스트는 실제 브라우저에서의 클릭, 스크롤 등 물리적 상호작용과 시각적 분석이 필요하다. 텍스트 기반 프롬프트만으로는 수행할 수 없는 작업이다."
   },
   {
     "id": "제2401회_1급_57번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_57번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "거대언어모델(LLM)의 핵심 역량은 자연어 생성과 이해이다. 고객 문의 이메일의 내용을 파악하고 적절한 답변을 작성하는 작업이 LLM을 활용한 업무 자동화에 가장 적합하다."
   },
   {
     "id": "제2401회_1급_58번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_58번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "EU AI 법안(AI Act)은 프라이버시와 기본권을 중시한다. 모든 AI 시스템에 대해 실시간 감시를 의무화하거나 사용자 동의 없는 데이터 수집을 허용한다는 내용은 법안의 취지(GDPR 준수 등)와 상반되므로 옳지 않다."
   },
   {
     "id": "제2401회_1급_59번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_59번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "편향(Bias)은 특정 집단에 대한 고정관념이나 차별적인 결과를 내놓는 현상을 말한다. 사용자 질문에 대해 중립적이고 사실적인 정보를 제공하는 것은 편향이 없는 이상적인 모델의 동작이다."
   },
   {
     "id": "제2401회_1급_60번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_60번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "GPT-4o 비용은 (5백만×$1.5) + (2백만×$5.0) = $7.5 + $10.0 = $17.50이다. GPT-4o Mini 비용은 (5백만×$0.1) + (2백만×$0.4) = $0.5 + $0.8 = $1.30이다."
   },
   {
     "id": "제2401회_1급_61번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_61번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "오디오와 비디오 데이터는 텍스트 데이터에 비해 정보량이 훨씬 많고 복잡하여 처리 시 더 많은 컴퓨팅 자원과 연산 능력을 필요로 한다. 텍스트보다 적은 능력을 요구한다는 설명은 옳지 않다."
   },
   {
     "id": "제2401회_1급_62번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_62번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "학습 데이터에서 민감 정보를 삭제하는 주된 이유는 개인정보 보호와 법적 규제 준수, 보안을 위해서이다. 민감 정보 삭제 자체가 모델의 지능이나 성능을 직접적으로 향상시키는 기술적 요인은 아니다."
   },
   {
     "id": "제2401회_1급_63번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_63번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "클라우드 서비스가 높은 보안 수준을 제공하더라도, 금융이나 국방 등 특수 데이터 규제가 있는 기업의 모든 보안 요구사항(망 분리, 데이터 주권 등)을 자동으로 충족시켜 주지는 못한다."
   },
   {
     "id": "제2401회_1급_64번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_64번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "LLM은 환각(Hallucination)이나 유해한 정보를 생성할 가능성이 있다. 따라서 생성된 모든 응답을 실시간으로 사용자에게 그대로 제공하는 것은 위험하며, 안전 필터(Guardrails)를 거쳐 검증된 응답만 제공해야 한다."
   },
   {
     "id": "제2401회_1급_65번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_65번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "ChatGPT는 기본적으로 텍스트를 생성하는 언어 모델이다. 코드를 '작성'하는 것은 가능하지만, 이를 스스로 '실행'하는 기능은 모델 자체에 내장된 것이 아니라 'Advanced Data Analysis'와 같은 별도의 도구(샌드박스 환경)를 통해 수행되는 것이다."
   },
   {
     "id": "제2401회_1급_66번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_66번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "실시간 처리 불가, 대규모 데이터 효율성 저하, 수학적 계산 부족은 LLM의 대표적인 한계점이다. 반면 머신러닝 라이브러리(TensorFlow 등)를 지원(Advanced Data Analysis 환경 등)한다는 것은 분석을 위한 '기능'이자 '장점'이므로 한계점으로 보기 어렵다."
   },
   {
     "id": "제2401회_1급_67번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_67번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "ChatGPT는 보안 및 기술적 구조상 외부의 대규모 데이터베이스에 직접 연결하여 실시간으로 데이터를 가져오거나 분석 결과를 자동으로 업데이트하는 기능을 기본적으로 제공하지 않는다."
   },
   {
     "id": "제2401회_1급_68번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_68번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "인공지능 시대의 협업 구조는 인간의 의사결정을 지원하고 역량을 강화하는 방향이어야 한다. 인간의 역할을 최소화하고 AI가 직무를 완전히 대체하는 것을 목표로 설계하는 것은 적절하지 않다."
   },
   {
     "id": "제2401회_1급_69번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_69번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "결측값, 비정상적인 범위, 불일치는 찾아내야 할 구체적인 '데이터 품질 오류'이다. 반면 '데이터 값의 정규화'는 데이터를 가공하는 '처리 과정'이나 '방법'을 의미하므로, 그 자체를 오류라고 부르지는 않는다."
   },
   {
     "id": "제2401회_1급_70번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_70번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "제시된 파이썬 코드의 `plt.pie(sales, ...)`는 데이터를 원형 비율로 나타내는 함수이다. 따라서 이 코드를 얻기 위한 프롬프트로는 '원형 그래프(Pie Chart) 작성'이 가장 적절하다."
   },
   {
     "id": "제2401회_1급_71번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_71번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "ChatGPT에 업로드한 파일의 내용은 해당 대화 세션 내에서만 유효하다. 이 내용이 ChatGPT의 영구적인 배경지식으로 저장되어 다른 세션이나 다른 사용자에게 공유된다는 설명은 개인정보 보호 및 시스템 구조상 옳지 않다."
   },
   {
     "id": "제2401회_1급_72번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_72번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "ChatGPT는 실시간 데이터를 직접 실행/처리하지 못할 뿐, 실시간 분석에 필요한 '파이썬 코드' 자체를 작성하는 능력은 갖추고 있다. 따라서 코드를 작성할 수 없다는 설명은 옳지 않다."
   },
   {
     "id": "제2401회_1급_73번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_73번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "ChatGPT는 기본적으로 로컬 파일이나 정적인 데이터셋을 분석하는 데 최적화되어 있다. 다양한 외부 데이터 소스(DB 등)에 실시간으로 연결하여 데이터를 통합하고 자동으로 업데이트하는 기능은 기본적으로 제공되지 않는다."
   },
   {
     "id": "제2401회_1급_74번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_74번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "ChatGPT(Advanced Data Analysis)는 결측치 처리나 데이터 정제와 같은 전처리 작업도 수행할 수 있다. 따라서 반드시 전처리가 완료된 데이터만 업로드해야 한다는 설명은 옳지 않다."
   },
   {
     "id": "제2401회_1급_75번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_75번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "t-검정, 회귀 분석, 시계열 분석은 '고급 통계 분석'의 범주에 속한다. 반면 '데이터 전처리'는 분석을 위한 준비 단계이며, 분포를 기준으로 이상값을 기계적으로 자동 제거하는 것은 분석가의 판단이 필요한 영역이므로 단순 수행 작업으로 분류하기 어렵다. 문제의 의도상 분석 기법이 아닌 것을 찾는 것이다."
   },
   {
     "id": "제2401회_1급_76번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_76번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "ChatGPT의 Advanced Data Analysis 기능을 사용하면 사용자가 업로드한 파일(CSV, Excel 등)을 파이썬 코드를 통해 분석하고, 요약 통계나 시각화 결과를 생성할 수 있다."
   },
   {
     "id": "제2401회_1급_77번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_77번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "LLM으로부터 구체적이고 정확한 답변을 얻기 위해서는 페르소나, 대상, 범위, 형식 등을 명확히 지정해야 한다. '유럽의 기후에 대해 설명해 줘'는 범위가 너무 포괄적이고 모호하여 좋은 프롬프트 예시로 적절하지 않다."
   },
   {
     "id": "제2401회_1급_78번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_78번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "사용자가 제공한 입력을 바탕으로 초기 개요를 작성하고, 이후 확장할 섹션을 선택하여 상세히 설명하는 과정을 반복하는 것은 'Outline Expansion(개요 확장) 패턴'이다."
   },
   {
     "id": "제2401회_1급_79번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_79번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "개요를 생성하고 확장하는 'Outline Expansion 패턴'과, 마지막에 다음에 무엇을 할지 묻거나 확장할 항목을 물어보는 'Tail Generation(꼬리 질문) 패턴'이 함께 사용되었다."
   },
   {
     "id": "제2401회_1급_80번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_80번.png",
-    "explainImage": null,
     "type": "choice",
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "프롬프트의 주요 구성 요소는 명령(Instruction), 맥락(Context), 입력 데이터(Input Data), 출력 지시자(Output Indicator)이다. '데이터 전처리'는 모델이 수행해야 할 과업(Task)의 일종이지, 프롬프트 문장 자체의 구성 요소는 아니다."
   },
   {
     "id": "제2401회_1급_81번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_81번.png",
-    "explainImage": null,
     "type": "subjective",
     "answerIndex": 0,
     "answers": [
       "포지셔널 인코딩",
       "위치 인코딩",
       "Positional Encoding"
-    ]
+    ],
+    "explainText": "트랜스포머 모델은 데이터를 병렬로 한꺼번에 처리하기 때문에 데이터의 순서(Order) 정보를 알 수 없다. 이를 보완하기 위해 입력 데이터에 단어의 상대적인 위치 정보를 더해주는 기술을 '포지셔널 인코딩(Positional Encoding)'이라고 한다."
   },
   {
     "id": "제2401회_1급_82번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_82번.png",
-    "explainImage": null,
     "type": "subjective",
     "answerIndex": 0,
     "answers": [
       "BERT",
       "Bidirectional Encoder Representations from Transformers"
-    ]
+    ],
+    "explainText": "구글에서 개발한 'BERT'는 트랜스포머의 인코더(Encoder)만을 활용하여 양방향 문맥을 파악할 수 있도록 설계된 사전 학습 모델이다. 문장 분류, 개체명 인식, 질의 응답 등 다양한 NLP 태스크에 활용된다."
   },
   {
     "id": "제2401회_1급_83번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_83번.png",
-    "explainImage": null,
     "type": "subjective",
     "answerIndex": 0,
     "answers": [
@@ -2515,34 +2515,35 @@
       "프롬프트 전략 패턴",
       "Prompt Pattern",
       "Prompt Strategy Pattern"
-    ]
+    ],
+    "explainText": "프롬프트 패턴(Prompt Pattern)은 거대 언어 모델(LLM)로부터 최적의 결과를 얻기 위해 프롬프트의 구조와 형식을 정형화한 템플릿 혹은 전략을 말한다. 페르소나(Persona), 레시피(Recipe) 등이 대표적인 예시이다."
   },
   {
     "id": "제2401회_1급_84번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_84번.png",
-    "explainImage": null,
     "type": "subjective",
     "answerIndex": 0,
     "answers": [
       "질문 정제 패턴",
       "질문 개선 패턴",
       "Question Refinement Pattern"
-    ]
+    ],
+    "explainText": "사용자가 입력한 질문에 대해 AI가 더 나은 형태의 질문을 제안하고, 사용자가 이를 선택하도록 유도하여 답변의 품질을 높이는 방식을 '질문 개선 패턴(Question Refinement Pattern)'이라고 한다."
   },
   {
     "id": "제2401회_1급_85번",
     "level": 1,
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_85번.png",
-    "explainImage": null,
     "type": "subjective",
     "answerIndex": 0,
     "answers": [
       "퓨샷패턴",
       "Few-shot Pattern"
-    ]
+    ],
+    "explainText": "제시된 이미지는 문제 해결을 위한 예시(Input-Output 쌍)를 프롬프트에 포함하여 모델이 작업을 이해하도록 돕는 방식이다. 이를 '퓨샷 프롬프팅(Few-shot Prompting)' 또는 '퓨샷 패턴'이라고 한다."
   },
   {
     "id": "제2401회_2급_1번",
@@ -2550,8 +2551,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_1번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "생성형 AI의 가장 큰 특징은 기존 데이터를 학습하여 텍스트, 이미지, 음악, 비디오 등 새로운 콘텐츠를 만들어낸다는 점이다. 단순한 분석이나 분류와는 구별된다."
   },
   {
     "id": "제2401회_2급_2번",
@@ -2559,8 +2560,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_2번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "기존의 AI(머신러닝, 딥러닝)는 데이터를 분류하거나 예측하는 데 초점이 맞춰져 있었다면, 생성형 AI의 핵심적인 기술적 특징은 학습한 패턴을 바탕으로 '새로운 데이터를 생성'한다는 것이다."
   },
   {
     "id": "제2401회_2급_3번",
@@ -2568,8 +2569,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_3번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "GPT-3는 대규모 텍스트 데이터를 기반으로 사전 학습된 모델이지만, 모델의 아키텍처 설계와 학습 데이터 구축은 인간에 의해 이루어진다. '인간의 지시 없이 스스로 학습한다'는 완전한 자율성을 의미하므로 옳지 않다."
   },
   {
     "id": "제2401회_2급_4번",
@@ -2577,8 +2578,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_4번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "할루시네이션(환각)은 AI 모델이 사실과 다른 정보를 생성하거나 존재하지 않는 내용을 마치 사실인 것처럼 출력하는 '오류 현상'을 말한다. AI 모델을 기반으로 서비스를 기획하는 '과정'을 뜻하는 용어가 아니다."
   },
   {
     "id": "제2401회_2급_5번",
@@ -2586,8 +2587,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_5번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "거대언어모델(GPT 등)은 텍스트를 처리할 때 단어보다 작은 의미 단위인 '토큰(Token)'으로 쪼개서 이해하고 생성한다."
   },
   {
     "id": "제2401회_2급_6번",
@@ -2595,8 +2596,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_6번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "생성형 AI는 이용자의 프롬프트(요구 사항)에 따라 텍스트, 이미지 등 새로운 콘텐츠를 생성하여 제공하는 기술이다. 사물 인식이나 분류는 기존 AI(Discriminative AI)의 주된 특징이다."
   },
   {
     "id": "제2401회_2급_7번",
@@ -2604,8 +2605,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_7번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "생성형 AI 기초 모델(Foundation Model)은 주로 대규모 데이터셋을 사용하여 '자기지도학습(Self-Supervised Learning)' 방식으로 사전 훈련된다. 지도학습으로만 훈련된다는 설명은 옳지 않다."
   },
   {
     "id": "제2401회_2급_8번",
@@ -2613,8 +2614,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_8번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "프롬프트 엔지니어링의 주된 목적은 AI 모델로부터 사용자가 원하는 최적의 결과물을 얻어낼 수 있도록 입력 텍스트(프롬프트)를 효과적으로 설계하고 최적화하는 것이다."
   },
   {
     "id": "제2401회_2급_9번",
@@ -2622,8 +2623,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_9번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "이미지 생성 AI는 사용자의 요구에 따라 새로운 이미지를 만들어내는 기술이다. 반면 이미지에서 특정 대상을 분리해내는 '추출(Extraction)'은 이미지를 분석하고 식별하는 '인식형 AI(Computer Vision)'의 주된 역할이므로 생성 AI 서비스에 대한 설명으로 가장 적절하지 않다."
   },
   {
     "id": "제2401회_2급_10번",
@@ -2631,8 +2632,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_10번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "파운데이션 모델은 방대한 데이터로 사전 학습된 모델이지만, 특정 작업에 바로 완벽하게 사용하기보다는 목적에 맞는 미세 조정(Fine-tuning)이나 프롬프트 엔지니어링 과정을 거쳐 사용하는 것이 일반적이다. '무조건 바로 사용할 수 있다'는 설명은 적절하지 않다."
   },
   {
     "id": "제2401회_2급_11번",
@@ -2640,8 +2641,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_11번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "거대언어모델(LLM)은 이름 그대로 '언어(텍스트)' 처리에 특화된 모델이다. 이미지 및 비디오 생성에 특화된 모델은 '이미지 생성 모델(예: Diffusion Model)' 등에 해당한다."
   },
   {
     "id": "제2401회_2급_12번",
@@ -2649,8 +2650,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_12번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "생성형 AI의 핵심 정의는 학습한 패턴을 바탕으로 사용자의 요구에 맞춰 텍스트, 이미지 등 '새로운 데이터(콘텐츠)를 생성'해내는 것이다."
   },
   {
     "id": "제2401회_2급_13번",
@@ -2658,8 +2659,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_13번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "AI 기술의 발전 방향은 성능 향상과 더불어 연산 효율성을 높여 처리 속도를 빠르게 하는 것이다. 컴퓨터의 처리 속도를 의도적으로 저하시키는 것은 발전 방향과 맞지 않다."
   },
   {
     "id": "제2401회_2급_14번",
@@ -2667,8 +2668,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_14번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "BERT는 문장의 양방향 문맥을 파악하여 '언어 이해(NLU)'에 특화된 모델이다. 반면 GPT 시리즈는 다음 단어를 예측하여 텍스트를 만들어내는 '생성(NLG)'에 특화되어 있다."
   },
   {
     "id": "제2401회_2급_15번",
@@ -2676,8 +2677,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_15번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "생성형 AI는 주로 텍스트, 이미지, 오디오, 비디오 등의 콘텐츠 데이터를 다룬다. 시계열 데이터(주식, 날씨 등)는 주로 전통적인 예측 분석 AI(Predictive AI)에서 다루는 데이터 유형이다."
   },
   {
     "id": "제2401회_2급_16번",
@@ -2685,8 +2686,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_16번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "GPT 모델 또한 방대한 다국어 데이터를 학습하여 영어뿐만 아니라 한국어, 일본어 등 다양한 언어를 처리할 수 있다. 영어만 가능하다는 설명은 옳지 않다."
   },
   {
     "id": "제2401회_2급_17번",
@@ -2694,8 +2695,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_17번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "프롬프트에 단순한 지시뿐만 아니라 배경 지식, 이유, 의도 등을 함께 제공하여 모델이 상황을 더 잘 이해하고 적절한 답변을 하도록 돕는 것을 '맥락(Context)의 제공'이라고 한다."
   },
   {
     "id": "제2401회_2급_18번",
@@ -2703,8 +2704,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_18번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "BERT는 문장의 양방향 문맥을 파악하는 '언어 이해(NLU)'에 특화된 모델이다. 긴 문장을 생성(NLG)하는 작업은 주로 GPT와 같은 생성 모델의 주된 역할이다."
   },
   {
     "id": "제2401회_2급_19번",
@@ -2712,8 +2713,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_19번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "프롬프트의 주요 구성 요소는 명령(Instruction), 맥락(Context), 입력 데이터(Input Data), 출력 지시자(Output Indicator)이다. '데이터셋'은 모델을 학습시키기 위한 자료의 모음을 뜻하며 프롬프트 구성 요소가 아니다."
   },
   {
     "id": "제2401회_2급_20번",
@@ -2721,8 +2722,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_20번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "할루시네이션(환각) 현상은 잘못되거나 편향된 정보 학습에서 발생하는 경우가 많다. 따라서 신뢰할 수 있는 고품질의 데이터로 모델을 훈련시키는 것이 가장 적절한 방지 전략이다."
   },
   {
     "id": "제2401회_2급_21번",
@@ -2730,8 +2731,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_21번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "실시간 환율 정보를 조회하여 보여주는 것은 데이터베이스 검색 및 조회 서비스의 영역이다. 생성형 AI는 학습된 패턴을 바탕으로 판독문, 이미지, 카피 문구 등 '새로운 콘텐츠'를 생성하는 데 특징이 있다."
   },
   {
     "id": "제2401회_2급_22번",
@@ -2739,8 +2740,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_22번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "손글씨를 인식하여 텍스트로 변환하는 기술(OCR)은 데이터를 식별하고 분류하는 '인식형 AI(Discriminative AI)'에 해당한다. 생성형 AI는 새로운 결과물을 만들어내는 기술이다."
   },
   {
     "id": "제2401회_2급_23번",
@@ -2748,8 +2749,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_23번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "역할 할당(Role Assignment)은 프롬프트를 통해 AI에게 특정 페르소나나 전문가의 역할을 부여하는 기법이다. 모델의 내부 구조 설계를 분석하고 최적화하는 것은 모델 개발자(엔지니어)의 영역이다."
   },
   {
     "id": "제2401회_2급_24번",
@@ -2757,8 +2758,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_24번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "병원 예약 및 위치 검색은 기존의 데이터베이스 조회 및 트랜잭션 처리 시스템이다. 이는 맞춤형 계획 수립이나 피드백 생성과 같은 생성형 AI의 창조적 작업과는 거리가 멀다."
   },
   {
     "id": "제2401회_2급_25번",
@@ -2766,8 +2767,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_25번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "프레임워크는 개발의 편의성, 알고리즘 재사용, 배포 단순화 등의 도구적 이점을 제공한다. 그러나 '단순한 학습으로 양질의 결과값을 얻는다'는 것은 모델 자체의 성능이나 데이터 품질에 달린 문제이며, 프레임워크 사용만으로 보장되는 이점은 아니다."
   },
   {
     "id": "제2401회_2급_26번",
@@ -2775,8 +2776,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_26번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "랭체인(LangChain)은 대규모 언어 모델(LLM)을 활용한 애플리케이션을 구축하기 위한 대표적인 오픈소스 프레임워크이다. Excel, Photoshop, Slack은 일반 응용 소프트웨어이다."
   },
   {
     "id": "제2401회_2급_27번",
@@ -2784,8 +2785,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_27번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "네이버 클로바 스튜디오(Clova Studio)는 네이버의 초대규모 AI '하이퍼클로바'를 기반으로 하는 유료 상용 플랫폼 서비스이다. 오픈소스로 공개되어 무료로 사용할 수 있다는 설명은 옳지 않다."
   },
   {
     "id": "제2401회_2급_28번",
@@ -2793,8 +2794,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_28번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "프레임워크는 개발에 필요한 표준화된 구조, 라이브러리, 도구들을 미리 제공함으로써 개발자가 처음부터 모든 것을 만들지 않고도 효율적으로 애플리케이션을 개발할 수 있도록 돕는다."
   },
   {
     "id": "제2401회_2급_29번",
@@ -2802,8 +2803,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_29번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "랭체인은 LLM과 외부 데이터를 연결하여 텍스트를 처리하는 데 특화되어 있다. 따라서 문서를 읽고 요약하는 프로그램을 만드는 것이 가장 적절한 활용 예시이다."
   },
   {
     "id": "제2401회_2급_30번",
@@ -2811,8 +2812,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_30번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "해외 모델들은 학습 데이터의 대부분이 영어권 자료로 구성되어 있다. 한국의 역사나 문화에 대한 한국어 학습 데이터의 양이 상대적으로 부족하기 때문에, 한국 관련 정보의 정확도가 낮게 나타날 수 있다."
   },
   {
     "id": "제2401회_2급_31번",
@@ -2820,8 +2821,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_31번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "IT 분야(개발자 등)에서는 생성형 AI(예: Copilot)를 활용하여 코드를 자동으로 작성하거나, 버그를 찾고 리팩토링하는 등의 '코딩 지원' 업무에 활용하는 것이 가장 대표적이다."
   },
   {
     "id": "제2401회_2급_32번",
@@ -2829,8 +2830,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_32번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "작업 시간 단축, 프로세스 가속화, 자동화 등은 AI 도입의 긍정적인 효과(생산성 향상)이다. 반면 '직원의 일자리 감소'는 기술 도입에 따른 사회적 문제나 부정적인 영향으로 분류된다."
   },
   {
     "id": "제2401회_2급_33번",
@@ -2838,8 +2839,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_33번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "생성형 AI로부터 좋은 답변을 얻기 위해서는 구체적이고 명확한 지시가 필요하다. '블로그로 삼행시 지어줘'와 같이 맥락이 없고 포괄적인 질문은 AI가 사용자의 의도를 파악하기 어려워 품질이 낮은 답변을 생성할 가능성이 높다."
   },
   {
     "id": "제2401회_2급_34번",
@@ -2847,8 +2848,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_34번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "개인식별정보(PII)를 찾아내는 작업은 패턴 매칭이나 개체명 인식(NER)과 같은 '식별/분류' 기술(Discriminative AI)의 영역이다. 이는 새로운 콘텐츠를 만들어내는 '생성형 AI'의 정의와 가장 거리가 멀다."
   },
   {
     "id": "제2401회_2급_35번",
@@ -2856,8 +2857,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_35번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "DALL-E, 스테이블 디퓨전(Stable Diffusion), 미드저니(Midjourney)는 모두 대표적인 '이미지 생성' 특화 모델이다. 반면 코파일럿(Copilot)은 코드 작성이나 문서 작업을 돕는 범용 AI 비서 서비스로, 이미지 생성만을 위한 전문 모델로 분류하기에는 가장 거리가 있다."
   },
   {
     "id": "제2401회_2급_36번",
@@ -2865,8 +2866,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_36번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "종이 문서를 전자 문서로 변환하는 기술(OCR)은 이미지를 텍스트로 '인식'하는 기술이다. 텍스트, 코드, 이미지 등 새로운 데이터를 '생성'하는 비즈니스 모델이 아니다."
   },
   {
     "id": "제2401회_2급_37번",
@@ -2874,8 +2875,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_37번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "퓨샷 프롬프팅(Few-shot Prompting)은 모델이 수행해야 할 작업의 예시(Input-Output 쌍)를 몇 가지 제공하여, 모델이 이를 참고해 올바른 답변을 생성하도록 유도하는 방법론이다."
   },
   {
     "id": "제2401회_2급_38번",
@@ -2883,8 +2884,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_38번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "생성형 AI는 환각 현상 등의 오류 가능성이 있어, 모든 고객 처리를 AI에게 전적으로 일임하는 것은 위험하며 적절한 방안이 아니다. 또한 이는 구체적인 활용 '방법'이라기보다 정책적인 '목표'에 가깝다."
   },
   {
     "id": "제2401회_2급_39번",
@@ -2892,8 +2893,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_39번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "직원의 출퇴근 시간을 기록하고 관리하는 것은 데이터베이스에 로그를 남기는 정형적인 시스템 기능이다. 이는 창의적인 콘텐츠나 텍스트를 생성하는 생성형 AI의 활용 사례로 보기 어렵다."
   },
   {
     "id": "제2401회_2급_40번",
@@ -2901,8 +2902,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_40번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "DALL-E는 텍스트 설명을 바탕으로 예술적이고 창의적인 이미지를 생성하는 도구이다. 정확한 수치를 바탕으로 정밀한 '통계 차트나 그래프'를 그리는 작업은 엑셀이나 BI 도구와 같은 데이터 시각화 툴이 훨씬 적합하다."
   },
   {
     "id": "제2401회_2급_41번",
@@ -2910,8 +2911,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_41번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "이메일 업무 효율화를 위해 요약본을 제공하는 것은 좋으나, 원본 내용을 삭제하는 것은 중요한 정보의 손실 위험이 있어 적절한 업무 자동화 방식으로 볼 수 없다. 원본은 보존하는 것이 원칙이다."
   },
   {
     "id": "제2401회_2급_42번",
@@ -2919,8 +2920,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_42번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "데이터 보안 강화와 저장 비용의 '증가'는 비용 '절감' 효과가 아니라 추가적인 비용 발생 요인에 해당하므로, 예상되는 절감 효과로 보기에 적절하지 않다."
   },
   {
     "id": "제2401회_2급_43번",
@@ -2928,8 +2929,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_43번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "머신러닝 모델 기반의 '예측 분석'은 데이터를 분류하거나 수치를 예측하는 기존 AI(Discriminative AI)의 영역이다. 생성형 AI(Generative AI)는 새로운 콘텐츠를 '생성'하는 데 초점이 맞춰져 있다."
   },
   {
     "id": "제2401회_2급_44번",
@@ -2937,8 +2938,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_44번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "프롬프트 엔지니어링은 AI 모델로부터 더 좋은 결과를 얻기 위해 입력 텍스트(프롬프트)를 최적화하는 기술이다. AI 모델이 구동되는 물리적인 '하드웨어 최적화'는 엔지니어링이나 MLOps의 영역이다."
   },
   {
     "id": "제2401회_2급_45번",
@@ -2946,8 +2947,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_45번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "생성형 AI는 데이터를 바탕으로 텍스트를 생성하는 능력이 뛰어나므로, 회계 데이터를 분석하여 '재무 보고서'를 자동으로 작성(생성)하는 작업이 가장 적절한 활용 사례이다."
   },
   {
     "id": "제2401회_2급_46번",
@@ -2955,8 +2956,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_46번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "프롬프트 엔지니어링은 이미 학습된 모델을 잘 '사용'하기 위한 기술이다. 모델의 정확성을 높이기 위해 학습 데이터를 수집하는 과정은 '데이터 엔지니어링'이나 '모델 학습' 단계에 해당한다."
   },
   {
     "id": "제2401회_2급_47번",
@@ -2964,8 +2965,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_47번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "프롬프트 엔지니어링의 주된 목적은 AI가 생성하는 결과물의 '품질(정확성, 관련성)'을 최적화하는 것이다. 응답 '속도' 최적화는 주로 모델 경량화나 하드웨어 가속 등의 기술적 접근이 필요하다."
   },
   {
     "id": "제2401회_2급_48번",
@@ -2973,8 +2974,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_48번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "하드웨어 성능을 모니터링하는 앱은 시스템 관리 도구이다. 이는 텍스트나 이미지를 생성하는 '생성형 AI' 기술을 활용하는 애플리케이션 사례로 보기에 거리가 멀다."
   },
   {
     "id": "제2401회_2급_49번",
@@ -2982,8 +2983,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_49번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "프롬프트는 모델이 명확하게 의도를 파악할 수 있도록 구체적이고 명료하게 작성해야 한다. 여러 가지 해석이 가능하도록 복잡하게 작성하는 것은 모델의 혼란을 야기하고 답변 품질을 저하시키므로 적절하지 않다."
   },
   {
     "id": "제2401회_2급_50번",
@@ -2991,8 +2992,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_50번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "사고의 연쇄(Chain of Thought) 기법은 모델에게 문제 해결 과정을 단계별로 나누어 추론하도록 유도함으로써, 복잡한 추론이나 수학적 계산 문제에서 논리적인 답변을 얻어내는 프롬프트 엔지니어링 전략이다."
   },
   {
     "id": "제2401회_2급_51번",
@@ -3000,8 +3001,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_51번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "생성형 AI 서비스(API 등)는 일반적으로 처리하는 토큰(글자 수)의 양에 따라 비용이 발생한다. 따라서 프롬프트를 간결하고 명확하게 작성하여 불필요한 토큰 사용을 줄이는 것이 비용 절감과 효율성 증대에 가장 적절하다."
   },
   {
     "id": "제2401회_2급_52번",
@@ -3009,8 +3010,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_52번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "생성형 AI를 사용할 때는 학습 데이터나 생성된 결과물이 타인의 저작권을 침해할 소지가 있는지 검토하고 주의를 기울여야 한다. 저작권 확인 없이 무단으로 사용하는 것은 법적 분쟁의 위험이 있다."
   },
   {
     "id": "제2401회_2급_53번",
@@ -3018,8 +3019,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_53번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "생성형 AI는 학습 데이터에 포함된 사회적 편향(성별, 인종 등)을 그대로 학습하여 결과물에 반영할 수 있다. 따라서 AI의 결과물이 항상 공정하다고 볼 수 없으며, 특정 집단에 불리한 편향된 결과를 생성할 가능성이 있다."
   },
   {
     "id": "제2401회_2급_54번",
@@ -3027,8 +3028,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_54번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "편향성 감소, 출력 내용의 신뢰성, 개인정보 보호는 AI 윤리의 핵심적인 요소이다. 반면 '데이터베이스 크기 축소'는 시스템의 효율성이나 비용과 관련된 기술적/운영적 고려사항이다."
   },
   {
     "id": "제2401회_2급_55번",
@@ -3036,8 +3037,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_55번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "랭체인(LangChain)은 대규모 언어 모델(LLM)을 활용한 애플리케이션 개발을 지원하는 프레임워크이다. 대규모 이미지 처리나 그래픽 디자인에 특화된 도구라는 설명은 옳지 않다."
   },
   {
     "id": "제2401회_2급_56번",
@@ -3045,8 +3046,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_56번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "ChatGPT-3.5는 텍스트 데이터를 기반으로 학습하고 동작하는 모델로, 이미지를 직접 보고 분석하는 기능은 제공하지 않는다. 이미지 분석(멀티모달) 기능은 GPT-4 모델의 주요 특징이다."
   },
   {
     "id": "제2401회_2급_57번",
@@ -3054,8 +3055,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_57번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "프롬프트에 관련된 모든 정보를 무조건 많이 넣는 것은 입력 토큰 수를 불필요하게 증가시켜 비용을 상승시킨다. 핵심 정보만 선별하여 제공하는 것이 비용 절감에 효과적이다."
   },
   {
     "id": "제2401회_2급_58번",
@@ -3063,8 +3064,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_58번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "이미지와 음성 등 텍스트 이외의 다양한 형태(멀티모달)의 데이터를 입력받아 분석하고 처리하기 위해서는 멀티모달 기능을 지원하는 GPT-4 모델을 사용하는 것이 가장 적절하다."
   },
   {
     "id": "제2401회_2급_59번",
@@ -3072,8 +3073,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_59번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "프롬프트 엔지니어링 프레임워크(예: LangChain)는 언어 모델과 관련된 기능을 제공하는 데 초점이 맞춰져 있다. '동영상의 제작과 편집'을 위한 고급 기능 제공은 비디오 편집 전문 소프트웨어의 역할이다."
   },
   {
     "id": "제2401회_2급_60번",
@@ -3081,8 +3082,8 @@
     "sessionId": "제2401회_2급",
     "type": "choice",
     "questionImage": "/questions/제2401회_2급/제2401회_2급_60번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "운영 비용을 최적화(절감)하기 위해서는 불필요한 연산을 줄여야 한다. 모델의 모든 기능을 사용하기 위해 복잡한 프롬프트를 사용하는 것은 토큰 사용량과 연산 비용을 증가시키므로 비용 절감 전략으로 적절하지 않다."
   },
   {
     "id": "제2402회_2급_1번",
@@ -3090,8 +3091,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_1번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "생성형 AI는 대규모 데이터셋에 존재하는 패턴과 구조, 확률적 분포를 학습하여 이를 바탕으로 새로운 콘텐츠를 생성하는 기술이다. 인터넷 검색 결과나 단일 소스만을 이용하는 것이 아니다."
   },
   {
     "id": "제2402회_2급_2번",
@@ -3099,8 +3100,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_2번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "트랜스포머(Transformer) 아키텍처는 2017년 구글의 논문 'Attention Is All You Need'를 통해 처음 등장했다. 2000년대에 등장했다는 설명은 시기적으로 맞지 않다."
   },
   {
     "id": "제2402회_2급_3번",
@@ -3108,8 +3109,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_3번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "생성형 AI는 텍스트, 코드, 이미지 등 다양한 형태의 데이터를 처리하고 생성할 수 있어 의료, 금융, 교육, 예술 등 산업 전반의 다양한 영역에서 범용적으로 활용될 수 있다는 점이 핵심이다."
   },
   {
     "id": "제2402회_2급_4번",
@@ -3117,8 +3118,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_4번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "사용자 관점에서 생성형 AI 서비스(ChatGPT 등)는 사용자가 입력하는 자연어 형태의 질문이나 명령인 '프롬프트(Prompt)'를 통해 작동을 시작한다."
   },
   {
     "id": "제2402회_2급_5번",
@@ -3126,8 +3127,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_5번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "생성형 AI 시스템 도입 시 데이터 유출, 프라이버시 침해, 저작권 등 보안 문제는 오히려 새로운 위험 요소로 대두되고 있으며, 보안이 강화되어 주목받는다는 설명은 적절하지 않다."
   },
   {
     "id": "제2402회_2급_6번",
@@ -3135,8 +3136,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_6번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "BERT(Bidirectional Encoder Representations from Transformers)는 2018년 구글(Google)에서 개발하여 발표한 모델이다. 마이크로소프트가 개발했다는 설명은 사실과 다르다."
   },
   {
     "id": "제2402회_2급_7번",
@@ -3144,8 +3145,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_7번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "DALL-E 3, Midjourney, Stable Diffusion은 모두 '이미지 생성'에 특화된 모델이다. 반면 Claude 3.5는 앤스로픽(Anthropic)에서 개발한 텍스트 기반의 거대언어모델(LLM)이다."
   },
   {
     "id": "제2402회_2급_8번",
@@ -3153,8 +3154,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_8번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "Gemini와 ChatGPT는 대표적인 '대화형 인공지능(Chatbot)' 서비스로, 사용자와 자연어로 묻고 답하는 실시간 대화형 방식을 통해 정보를 제공한다."
   },
   {
     "id": "제2402회_2급_9번",
@@ -3162,8 +3163,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_9번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "ChatGPT가 주목받은 가장 큰 이유는 사용자와 마치 사람처럼 자연스럽게 대화하며 질문의 의도를 파악하고 답을 생성하는 뛰어난 대화 능력과 접근성 때문이다."
   },
   {
     "id": "제2402회_2급_10번",
@@ -3171,8 +3172,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_10번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "ChatGPT는 인간의 피드백을 반영하여 강화 학습을 수행하는 RLHF(Reinforcement Learning from Human Feedback) 기법을 사용하여 모델의 답변 품질을 비약적으로 향상시켰다."
   },
   {
     "id": "제2402회_2급_11번",
@@ -3180,8 +3181,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_11번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "LLM은 사전 학습된 지식뿐만 아니라, 프롬프트(대화 맥락)에 주어진 정보를 즉석에서 활용하여 답변하는 인컨텍스트 러닝(In-context Learning) 능력이 뛰어나 자연스러운 대화가 가능하다."
   },
   {
     "id": "제2402회_2급_12번",
@@ -3189,8 +3190,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_12번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "대규모 언어 모델(LLM)은 방대한 양의 텍스트 데이터를 학습하여 언어의 패턴을 이해하고, 이를 바탕으로 자연스러운 텍스트를 생성하거나 언어 관련 작업을 수행하는 인공지능 모델이다."
   },
   {
     "id": "제2402회_2급_13번",
@@ -3198,8 +3199,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_13번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "LLM 학습 과정에서 가장 큰 문제점 중 하나는 학습 데이터에 포함된 편향성(Bias)이 모델에 그대로 반영되어, 특정 집단에 대한 차별이나 부정확한 정보(할루시네이션)를 생성할 수 있다는 점이다."
   },
   {
     "id": "제2402회_2급_14번",
@@ -3207,8 +3208,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_14번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "대규모 언어 모델(LLM)의 핵심 기능은 입력된 텍스트의 문맥(Context)을 이해하고, 확률적으로 가장 적절한 다음 단어를 예측하여 일관된 답변을 생성하는 것이다."
   },
   {
     "id": "제2402회_2급_15번",
@@ -3216,8 +3217,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_15번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "LLM(Large Language Model)은 이름 그대로 언어(Language)를 다루는 모델이므로, 번역, 요약, 질의응답, 문장 생성 등 자연어 처리(NLP) 작업이 주된 역할이다."
   },
   {
     "id": "제2402회_2급_16번",
@@ -3225,8 +3226,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_16번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "LLM은 입력된 텍스트 데이터의 패턴과 통계적 확률을 분석하여, 주어진 문맥 다음에 올 가장 적절한 단어나 문장을 순차적으로 예측(Next Token Prediction)하는 방식으로 작동한다."
   },
   {
     "id": "제2402회_2급_17번",
@@ -3234,8 +3235,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_17번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "프롬프트(Prompt)는 사용자가 생성형 AI에게 원하는 작업(질문, 지시, 명령 등)을 수행하도록 요청하고 가이드하는 입력값(Instruction) 역할을 한다."
   },
   {
     "id": "제2402회_2급_18번",
@@ -3243,8 +3244,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_18번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "컴퓨터 기술 초기(CLI 환경 등)에서 프롬프트는 사용자가 시스템에게 특정 명령어를 텍스트로 입력하여 작업을 수행하도록 유도하는 입력 인터페이스를 의미했다."
   },
   {
     "id": "제2402회_2급_19번",
@@ -3252,8 +3253,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_19번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "프롬프트 엔지니어링은 주어진 모델에서 최적의 답변을 이끌어내는 기술이지, 어떤 모델을 선택할지를 자동으로 도와주는 도구는 아니다. 모델 선택은 개발 단계의 의사결정이다."
   },
   {
     "id": "제2402회_2급_20번",
@@ -3261,8 +3262,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_20번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "할루시네이션(Hallucination, 환각)은 생성형 AI가 사실이 아니거나 문맥과 전혀 관련 없는 엉뚱한 거짓 정보를 마치 사실인 것처럼 그럴듯하게 생성해내는 오류 현상을 말한다."
   },
   {
     "id": "제2402회_2급_21번",
@@ -3270,8 +3271,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_21번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "프롬프트 엔지니어링의 핵심 목표는 AI 모델과 효과적으로 상호작용하여 사용자가 의도한 최적의 결과물(답변)을 얻어내는 것이다. 이를 위해 프롬프트를 지속적으로 수정하고 개선한다."
   },
   {
     "id": "제2402회_2급_22번",
@@ -3279,8 +3280,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_22번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "랭체인(LangChain)은 대규모 언어 모델(LLM)을 활용하여 챗봇, 문서 분석, 에이전트 등 다양한 AI 애플리케이션을 쉽고 효율적으로 개발할 수 있도록 돕는 오픈소스 프레임워크이다."
   },
   {
     "id": "제2402회_2급_23번",
@@ -3288,8 +3289,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_23번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "랭체인(LangChain)은 소프트웨어 개발 프레임워크이다. 컴퓨터 하드웨어 부품을 물리적으로 업그레이드하는 기능과는 전혀 관련이 없다."
   },
   {
     "id": "제2402회_2급_24번",
@@ -3297,8 +3298,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_24번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "AI 프레임워크(예: TensorFlow, PyTorch 등)는 개발자들이 AI 모델을 효율적으로 구축(Build), 학습(Train), 배포(Deploy)할 수 있도록 필요한 도구와 라이브러리를 모아놓은 플랫폼이다."
   },
   {
     "id": "제2402회_2급_25번",
@@ -3306,8 +3307,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_25번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "특정 프레임워크에 지나치게 의존(Lock-in)하게 되면, 나중에 다른 기술이나 도구로 변경하기 어려워져 기술적 유연성이 떨어질 수 있다는 점이 단점으로 꼽힌다."
   },
   {
     "id": "제2402회_2급_26번",
@@ -3315,8 +3316,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_26번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "네이버 클로바 스튜디오는 텍스트 기반의 생성형 AI 도구이다. '주가 예측 모델 구축'과 같은 수치 데이터 기반의 전문적인 시계열 예측/분석 기능은 주된 지원 기능이 아니다."
   },
   {
     "id": "제2402회_2급_27번",
@@ -3324,8 +3325,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_27번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "토크나이저(Tokenizer)의 특성상 한국어와 같은 비영어권 언어는 영어보다 더 많은 토큰으로 분리되는 경향이 있다. '영어와 동일한 토큰 수를 사용한다'는 설명은 기술적으로 옳지 않다."
   },
   {
     "id": "제2402회_2급_28번",
@@ -3333,8 +3334,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_28번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "대부분의 글로벌 LLM은 학습 데이터의 절대다수가 영어로 구성되어 있다. 한국어 등 비영어권 데이터의 학습량이 상대적으로 적기 때문에 해당 언어에서의 성능이나 이해도가 떨어질 수 있다."
   },
   {
     "id": "제2402회_2급_29번",
@@ -3342,8 +3343,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_29번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "물류센터 자동화의 주된 목적은 인력 의존도를 낮추고 효율성을 높이는 것이다. '분류 직원의 증원'은 자동화의 성과가 아니라 오히려 반대되는 결과이므로 적절하지 않다."
   },
   {
     "id": "제2402회_2급_30번",
@@ -3351,8 +3352,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_30번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "여행사가 제공하는 AI 서비스는 주로 여행 상품 추천, 예약 상담, 일정 관리 등이다. '여행지 사진을 찍고 편집하여 SNS에 올리는 것'은 사용자의 개인적인 활동이거나 별도의 앱 기능이며, 여행사의 핵심 서비스와는 거리가 멀다."
   },
   {
     "id": "제2402회_2급_31번",
@@ -3360,8 +3361,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_31번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "AI가 모든 고객 처리를 전담하는 것은 AI의 오류(할루시네이션 등) 위험 때문에 현실적이지도 않고 바람직하지도 않다. AI는 상담사를 보조하거나 단순 문의를 처리하는 역할이 적절하다."
   },
   {
     "id": "제2402회_2급_32번",
@@ -3369,8 +3370,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_32번.png",
-    "explainImage": null,
-    "answerIndex": 2
+    "answerIndex": 2,
+    "explainText": "데이터 분석의 신뢰성을 위해 원본 데이터(기초 데이터)는 보존되어야 한다. AI가 기초 데이터를 직접 수정하도록 하는 것은 데이터 무결성을 해칠 수 있어 매우 위험하며 적절하지 않은 정책이다."
   },
   {
     "id": "제2402회_2급_33번",
@@ -3378,8 +3379,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_33번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "생성형 AI는 판례 검색이나 기초 법률 문서 초안 작성 등을 자동화하여 변호사의 업무 시간을 단축하고 효율성을 높이는 데 가장 적합하다."
   },
   {
     "id": "제2402회_2급_34번",
@@ -3387,8 +3388,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_34번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "생성형 AI를 이용해 뉴스 기사를 자동으로 대량 생산하여 배포하는 행위는 가짜 뉴스 확산이나 저널리즘 품질 저하, 저작권 및 윤리적 문제를 일으킬 소지가 커 가장 부적절한 활용 사례이다."
   },
   {
     "id": "제2402회_2급_35번",
@@ -3396,8 +3397,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_35번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "메타데이터 기반 추천은 사용자의 시청 기록, 위치, 선호도 등 다양한 맥락 정보를 활용한다. 사용자가 '직접 입력한 검색어'에만 의존하는 것은 메타데이터를 충분히 활용하지 못하는 단순 검색 방식이다."
   },
   {
     "id": "제2402회_2급_36번",
@@ -3405,8 +3406,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_36번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "복잡한 문제를 한 번에 풀지 않고, 단계적으로 나누어 질문함으로써 깊이 있는 답변을 유도하는 기법을 '계층적 질문 기법(Layered Questioning Technique)'이라고 한다."
   },
   {
     "id": "제2402회_2급_37번",
@@ -3414,8 +3415,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_37번.png",
-    "explainImage": null,
-    "answerIndex": 0
+    "answerIndex": 0,
+    "explainText": "DALL-E는 입력된 텍스트 프롬프트를 정확하게 반영하는(Fidelity) 능력이 뛰어나고, Midjourney는 회화적이고 예술적인(Artistic) 고품질 이미지를 생성하는 데 강점이 있다."
   },
   {
     "id": "제2402회_2급_38번",
@@ -3423,8 +3424,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_38번.png",
-    "explainImage": null,
-    "answerIndex": 1
+    "answerIndex": 1,
+    "explainText": "AI 챗봇 도입의 가장 큰 장점은 24시간 언제든지 대량의 고객 문의(단순 반복 질문 등)를 즉각적이고 신속하게 처리할 수 있어 업무 효율성을 크게 높여준다는 것이다."
   },
   {
     "id": "제2402회_2급_39번",
@@ -3432,8 +3433,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_39번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "할루시네이션은 모호한 프롬프트 입력(ㄱ), 특정 데이터 편향 학습(ㄴ), 모델 자체의 확률적 생성 방식의 한계(ㄷ) 등 기술적/입력적 요인에 의해 발생한다. 기업의 윤리의식 부재(ㄹ)는 간접적 원인일 수는 있으나 직접적인 기술적 발생 원인으로 보기는 어렵다."
   },
   {
     "id": "제2402회_2급_40번",
@@ -3441,8 +3442,8 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_40번.png",
-    "explainImage": null,
-    "answerIndex": 3
+    "answerIndex": 3,
+    "explainText": "동일한 작업을 불필요하게 반복 수행하는 것은 API 호출 비용과 토큰 사용량을 증가시켜 운영 비용을 낭비하는 주원인이다. 캐싱(Caching) 등을 통해 반복을 줄여야 효율적이다."
   },
   {
     "id": "제2402회_2급_41번",
@@ -3450,7 +3451,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_41번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -3459,7 +3459,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_42번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -3468,7 +3467,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_43번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -3477,7 +3475,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_44번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -3486,7 +3483,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_45번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -3495,7 +3491,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_46번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -3504,7 +3499,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_47번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -3513,7 +3507,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_48번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -3522,7 +3515,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_49번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -3531,7 +3523,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_50번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -3540,7 +3531,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_51번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -3549,7 +3539,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_52번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -3558,7 +3547,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_53번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -3567,7 +3555,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_54번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -3576,7 +3563,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_55번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -3585,7 +3571,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_56번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -3594,7 +3579,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_57번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -3603,7 +3587,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_58번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -3612,7 +3595,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_59번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -3621,7 +3603,6 @@
     "sessionId": "제2402회_2급",
     "type": "choice",
     "questionImage": "/questions/제2402회_2급/제2402회_2급_60번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -3629,7 +3610,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_1번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -3638,7 +3618,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_2번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 2
   },
@@ -3647,7 +3626,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_3번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 2
   },
@@ -3656,7 +3634,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_4번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -3665,7 +3642,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_5번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -3674,7 +3650,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_6번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -3683,7 +3658,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_7번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -3692,7 +3666,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_8번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -3701,7 +3674,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_9번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -3710,7 +3682,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_10번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -3719,7 +3690,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_11번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -3728,7 +3698,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_12번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -3737,7 +3706,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_13번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -3746,7 +3714,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_14번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 2
   },
@@ -3755,7 +3722,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_15번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -3764,7 +3730,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_16번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -3773,7 +3738,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_17번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 2
   },
@@ -3782,7 +3746,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_18번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 2
   },
@@ -3791,7 +3754,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_19번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -3800,7 +3762,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_20번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -3809,7 +3770,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_21번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 2
   },
@@ -3818,7 +3778,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_22번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -3827,7 +3786,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_23번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -3836,7 +3794,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_24번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -3845,7 +3802,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_25번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -3854,7 +3810,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_26번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -3863,7 +3818,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_27번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -3872,7 +3826,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_28번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 2
   },
@@ -3881,7 +3834,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_29번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -3890,7 +3842,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_30번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -3899,7 +3850,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_31번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -3908,7 +3858,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_32번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -3917,7 +3866,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_33번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -3926,7 +3874,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_34번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -3935,7 +3882,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_35번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 2
   },
@@ -3944,7 +3890,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_36번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -3953,7 +3898,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_37번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -3962,7 +3906,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_38번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -3971,7 +3914,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_39번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -3980,7 +3922,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_40번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 2
   },
@@ -3989,7 +3930,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_41번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -3998,7 +3938,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_42번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -4007,7 +3946,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_43번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -4016,7 +3954,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_44번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -4025,7 +3962,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_45번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -4034,7 +3970,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_46번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -4043,7 +3978,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_47번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -4052,7 +3986,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_48번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -4061,7 +3994,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_49번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -4070,7 +4002,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_50번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -4079,7 +4010,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_51번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -4088,7 +4018,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_52번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 2
   },
@@ -4097,7 +4026,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_53번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -4106,7 +4034,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_54번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -4115,7 +4042,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_55번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -4124,7 +4050,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_56번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -4133,7 +4058,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_57번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -4142,7 +4066,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_58번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -4151,7 +4074,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_59번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -4160,7 +4082,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_60번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -4169,7 +4090,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_61번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -4178,7 +4098,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_62번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -4187,7 +4106,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_63번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 2
   },
@@ -4196,7 +4114,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_64번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 2
   },
@@ -4205,7 +4122,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_65번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -4214,7 +4130,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_66번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -4223,7 +4138,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_67번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 2
   },
@@ -4232,7 +4146,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_68번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -4241,7 +4154,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_69번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -4250,7 +4162,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_70번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -4259,7 +4170,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_71번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -4268,7 +4178,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_72번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -4277,7 +4186,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_73번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 3
   },
@@ -4286,7 +4194,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_74번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -4295,7 +4202,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_75번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -4304,7 +4210,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_76번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -4313,7 +4218,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_77번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 2
   },
@@ -4322,7 +4226,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_78번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 0
   },
@@ -4331,7 +4234,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_79번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -4340,7 +4242,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_80번.png",
-    "explainImage": null,
     "type": "choice",
     "answerIndex": 1
   },
@@ -4349,7 +4250,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_81번.png",
-    "explainImage": null,
     "type": "subjective",
     "answerIndex": 0,
     "answers": [
@@ -4361,7 +4261,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_82번.png",
-    "explainImage": null,
     "type": "subjective",
     "answerIndex": 0,
     "answers": [
@@ -4374,7 +4273,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_83번.png",
-    "explainImage": null,
     "type": "subjective",
     "answerIndex": 0,
     "answers": [
@@ -4391,7 +4289,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_84번.png",
-    "explainImage": null,
     "type": "subjective",
     "answerIndex": 0,
     "answers": [
@@ -4405,7 +4302,6 @@
     "level": 1,
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_85번.png",
-    "explainImage": null,
     "type": "subjective",
     "answerIndex": 0,
     "answers": [
@@ -4421,7 +4317,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_1번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -4430,7 +4325,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_2번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4439,7 +4333,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_3번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4448,7 +4341,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_4번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -4457,7 +4349,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_5번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4466,7 +4357,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_6번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4475,7 +4365,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_7번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -4484,7 +4373,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_8번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -4493,7 +4381,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_9번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4502,7 +4389,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_10번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4511,7 +4397,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_11번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4520,7 +4405,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_12번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -4529,7 +4413,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_13번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4538,7 +4421,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_14번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4547,7 +4429,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_15번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4556,7 +4437,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_16번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -4565,7 +4445,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_17번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -4574,7 +4453,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_18번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4583,7 +4461,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_19번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4592,7 +4469,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_20번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4601,7 +4477,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_21번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -4610,7 +4485,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_22번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4619,7 +4493,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_23번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -4628,7 +4501,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_24번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -4637,7 +4509,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_25번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -4646,7 +4517,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_26번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4655,7 +4525,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_27번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -4664,7 +4533,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_28번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4673,7 +4541,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_29번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4682,7 +4549,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_30번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -4691,7 +4557,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_31번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4700,7 +4565,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_32번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -4709,7 +4573,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_33번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4718,7 +4581,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_34번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -4727,7 +4589,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_35번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -4736,7 +4597,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_36번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4745,7 +4605,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_37번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -4754,7 +4613,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_38번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -4763,7 +4621,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_39번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -4772,7 +4629,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_40번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4781,7 +4637,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_41번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -4790,7 +4645,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_42번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -4799,7 +4653,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_43번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4808,7 +4661,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_44번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -4817,7 +4669,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_45번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4826,7 +4677,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_46번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4835,7 +4685,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_47번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4844,7 +4693,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_48번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4853,7 +4701,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_49번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4862,7 +4709,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_50번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4871,7 +4717,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_51번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4880,7 +4725,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_52번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -4889,7 +4733,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_53번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4898,7 +4741,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_54번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4907,7 +4749,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_55번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4916,7 +4757,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_56번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -4925,7 +4765,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_57번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4934,7 +4773,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_58번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4943,7 +4781,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_59번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -4952,7 +4789,6 @@
     "sessionId": "제2502회_2급",
     "type": "choice",
     "questionImage": "/questions/제2502회_2급/제2502회_2급_60번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4961,7 +4797,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_1번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4970,7 +4805,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_2번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -4979,7 +4813,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_3번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -4988,7 +4821,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_4번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -4997,7 +4829,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_5번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -5006,7 +4837,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_6번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -5015,7 +4845,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_7번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -5024,7 +4853,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_8번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -5033,7 +4861,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_9번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -5042,7 +4869,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_10번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -5051,7 +4877,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_11번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5060,7 +4885,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_12번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -5069,7 +4893,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_13번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -5078,7 +4901,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_14번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -5087,7 +4909,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_15번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -5096,7 +4917,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_16번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5105,7 +4925,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_17번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -5114,7 +4933,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_18번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -5123,7 +4941,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_19번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -5132,7 +4949,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_20번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5141,7 +4957,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_21번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -5150,7 +4965,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_22번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -5159,7 +4973,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_23번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -5168,7 +4981,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_24번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5177,7 +4989,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_25번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -5186,7 +4997,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_26번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5195,7 +5005,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_27번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -5204,7 +5013,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_28번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5213,7 +5021,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_29번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5222,7 +5029,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_30번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5231,7 +5037,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_31번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -5240,7 +5045,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_32번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -5249,7 +5053,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_33번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5258,7 +5061,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_34번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5267,7 +5069,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_35번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5276,7 +5077,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_36번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -5285,7 +5085,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_37번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5294,7 +5093,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_38번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -5303,7 +5101,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_39번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5312,7 +5109,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_40번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -5321,7 +5117,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_41번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -5330,7 +5125,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_42번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -5339,7 +5133,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_43번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5348,7 +5141,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_44번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -5357,7 +5149,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_45번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5366,7 +5157,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_46번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5375,7 +5165,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_47번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -5384,7 +5173,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_48번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5393,7 +5181,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_49번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -5402,7 +5189,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_50번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -5411,7 +5197,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_51번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -5420,7 +5205,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_52번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -5429,7 +5213,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_53번.png",
-    "explainImage": null,
     "answerIndex": 1
   },
   {
@@ -5438,7 +5221,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_54번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -5447,7 +5229,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_55번.png",
-    "explainImage": null,
     "answerIndex": 2
   },
   {
@@ -5456,7 +5237,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_56번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -5465,7 +5245,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_57번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
@@ -5474,7 +5253,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_58번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -5483,7 +5261,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_59번.png",
-    "explainImage": null,
     "answerIndex": 3
   },
   {
@@ -5492,7 +5269,6 @@
     "sessionId": "제2501회_2급",
     "type": "choice",
     "questionImage": "/questions/제2501회_2급/제2501회_2급_60번.png",
-    "explainImage": null,
     "answerIndex": 0
   },
   {
