@@ -55,6 +55,10 @@ export default function PracticePage() {
       : [];
   }, [sessionsParam]);
   const isSampleSession = mode === "single" && sessionId.includes("샘플");
+  const seenKey = useMemo(
+    () => (mode === "single" && sessionId ? `seen:${sessionId}` : ""),
+    [mode, sessionId]
+  );
 
   const [pool, setPool] = useState<QuestionExt[]>([]);
   const [idx, setIdx] = useState(0);
@@ -112,17 +116,39 @@ export default function PracticePage() {
         }
         let picked = shuffle(filtered).slice(0, Math.min(count, filtered.length));
         if (mode === "single") {
+          let seenSet = new Set<string>();
+          if (seenKey) {
+            try {
+              const raw = localStorage.getItem(seenKey);
+              const arr = raw ? JSON.parse(raw) : [];
+              if (Array.isArray(arr)) arr.forEach((id) => seenSet.add(String(id)));
+            } catch {}
+          }
           const groups = new Map<string, QuestionExt[]>();
           filtered.forEach((item) => {
             const key = item.questionImage ?? item.id;
             if (!groups.has(key)) groups.set(key, []);
             groups.get(key)!.push(item);
           });
-          const shuffledKeys = shuffle(Array.from(groups.keys()));
+          let groupKeys = Array.from(groups.keys()).filter((key) => {
+            const items = groups.get(key) ?? [];
+            return !items.every((item) => seenSet.has(item.id));
+          });
+          if (groupKeys.length === 0) {
+            seenSet = new Set<string>();
+            groupKeys = Array.from(groups.keys());
+          }
+          const shuffledKeys = shuffle(groupKeys);
           picked = shuffledKeys.flatMap((key) => {
             const items = groups.get(key) ?? [];
             return items.sort((a, b) => (getQuestionNumber(a.id) ?? 0) - (getQuestionNumber(b.id) ?? 0));
           });
+          if (seenKey) {
+            try {
+              picked.forEach((item) => seenSet.add(item.id));
+              localStorage.setItem(seenKey, JSON.stringify(Array.from(seenSet)));
+            } catch {}
+          }
         }
         const max = picked.reduce((sum, q) => {
           if (mode === "overnight" || mode === "mock") return sum;
@@ -171,6 +197,16 @@ export default function PracticePage() {
       .sort((a, b) => a - b);
     return { isGroup: items.length > 1, items, indices, start, end };
   }, [q, pool]);
+
+
+  const handleHome = () => {
+    const ok = window.confirm("문제를 풀다가 홈 버튼을 눌렀을 때 나가면 초기화되는데 괜찮으십니까?");
+    if (!ok) return;
+    try {
+      if (seenKey) localStorage.removeItem(seenKey);
+    } catch {}
+    router.push("/");
+  };
 
   const resetForNext = () => {
     setSelectedChoices([]);
@@ -350,7 +386,7 @@ export default function PracticePage() {
               맞은 개수 {correctCount} / {total}
             </div>
             <div className="text-xs text-gray-500">샘플문제라 점수 부여가 되어 있지 않습니다.</div>
-            <button onClick={() => router.push("/")} className="mt-2 underline text-sm">
+            <button onClick={handleHome} className="mt-2 underline text-sm">
               홈으로
             </button>
           </div>
@@ -370,7 +406,7 @@ export default function PracticePage() {
             <div className="text-2xl font-bold">
               맞은 개수 {correctCount} / {total}
             </div>
-            <button onClick={() => router.push("/")} className="mt-2 underline text-sm">
+            <button onClick={handleHome} className="mt-2 underline text-sm">
               홈으로
             </button>
           </div>
@@ -412,7 +448,7 @@ export default function PracticePage() {
                 ★ 틀렸던 문제
               </div>
             )}
-            <button onClick={() => router.push("/")} className="text-sm underline">
+            <button onClick={handleHome} className="text-sm underline">
               홈
             </button>
           </div>
@@ -462,6 +498,7 @@ export default function PracticePage() {
                 <img src={q.explainImage} alt="explanation" className="w-full rounded-xl border" />
               </div>
             )}
+            <div className="text-xs text-gray-500">진행: {idx + 1}/{total}</div>
           </div>
         </div>
       </div>
@@ -484,7 +521,7 @@ export default function PracticePage() {
                 ★ 틀렸던 문제
               </div>
             )}
-            <button onClick={() => router.push("/")} className="text-sm underline">
+            <button onClick={handleHome} className="text-sm underline">
               홈
             </button>
           </div>
@@ -618,18 +655,16 @@ export default function PracticePage() {
             {showExplain && !q.explainImage && q.explainText && (
               <div className="pt-2 text-base text-black leading-relaxed whitespace-pre-line space-y-1">
                 <div className="font-semibold">
-                  [정답] {(() => {
-                    const answerIndexes =
-                      Array.isArray(q.answerIndexes) && q.answerIndexes.length > 0
-                        ? q.answerIndexes
-                        : [q.answerIndex];
-                    const labels = answerIndexes.map((i) => CHOICES[i]).join(", ");
-                    return labels;
-                  })()}번
+                  [?뺣떟] {
+                    Array.isArray(q.answers) && q.answers.length > 0
+                      ? q.answers.join(" / ")
+                      : "?뺣떟 ?뺣낫 ?놁뼱??"
+                  }
                 </div>
-                <div>[해설] {q.explainText}</div>
+                <div>[?댁꽕] {q.explainText}</div>
               </div>
             )}
+            <div className="text-xs text-gray-500">진행: {idx + 1}/{total}</div>
           </div>
         </div>
       </div>
@@ -651,7 +686,7 @@ export default function PracticePage() {
                 ★ 틀렸던 문제
               </div>
           )}
-          <button onClick={() => router.push("/")} className="text-sm underline">
+          <button onClick={handleHome} className="text-sm underline">
             홈
           </button>
         </div>
@@ -766,6 +801,7 @@ export default function PracticePage() {
               })}
             </div>
           )}
+                    <div className="text-xs text-gray-500">진행: {idx + 1}/{total}</div>
         </div>
       </div>
     </div>

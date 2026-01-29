@@ -219,7 +219,6 @@
     "type": "subjective",
     "questionImage": "/questions/1급-A형-샘플/1급-A형-샘플_24번(주관식).png",
     "explainImage": "/explanations/1급-A형-샘플/1급-A형-샘플_24번.png",
-    "answerIndex": 0,
     "answers": [
       "시그모이드함수",
       "시그모이드 함수",
@@ -239,7 +238,6 @@
     "type": "subjective",
     "questionImage": "/questions/1급-A형-샘플/1급-A형-샘플_25번(주관식).png",
     "explainImage": "/explanations/1급-A형-샘플/1급-A형-샘플_25번.png",
-    "answerIndex": 0,
     "answers": [
       "K-Fold Cross Validation",
       "k-fold cross validation"
@@ -252,7 +250,6 @@
     "type": "subjective",
     "questionImage": "/questions/1급-A형-샘플/1급-A형-샘플_26번(주관식).png",
     "explainImage": "/explanations/1급-A형-샘플/1급-A형-샘플_26번.png",
-    "answerIndex": 0,
     "answers": [
       "챗GPT 아카이브",
       "아카이브",
@@ -475,7 +472,6 @@
     "type": "subjective",
     "questionImage": "/questions/1급-B형-샘플/1급-B형-샘플_24번(주관식).png",
     "explainImage": "/explanations/1급-B형-샘플/1급-B형-샘플_24번.png",
-    "answerIndex": 0,
     "answers": [
       "오류 역전파",
       "오류역전파",
@@ -489,7 +485,6 @@
     "type": "subjective",
     "questionImage": "/questions/1급-B형-샘플/1급-B형-샘플_25번(주관식).png",
     "explainImage": "/explanations/1급-B형-샘플/1급-B형-샘플_25번.png",
-    "answerIndex": 0,
     "answers": [
       "가지치기",
       "Pruning"
@@ -502,7 +497,6 @@
     "type": "subjective",
     "questionImage": "/questions/1급-B형-샘플/1급-B형-샘플_26번(주관식).png",
     "explainImage": "/explanations/1급-B형-샘플/1급-B형-샘플_26번.png",
-    "answerIndex": 0,
     "answers": [
       "VAE",
       "변이형 자동 인코더",
@@ -516,7 +510,6 @@
     "type": "subjective",
     "questionImage": "/questions/1급-B형-샘플/1급-B형-샘플_27번(주관식).png",
     "explainImage": "/explanations/1급-B형-샘플/1급-B형-샘플_27번.png",
-    "answerIndex": 0,
     "answers": [
       "탐색적 데이터 분석",
       "EDA",
@@ -530,7 +523,6 @@
     "type": "subjective",
     "questionImage": "/questions/1급-B형-샘플/1급-B형-샘플_28번(주관식).png",
     "explainImage": "/explanations/1급-B형-샘플/1급-B형-샘플_28번.png",
-    "answerIndex": 0,
     "answers": [
       "결측치 처리",
       "결측값",
@@ -544,7 +536,6 @@
     "type": "subjective",
     "questionImage": "/questions/1급-B형-샘플/1급-B형-샘플_29번(주관식).png",
     "explainImage": "/explanations/1급-B형-샘플/1급-B형-샘플_29번.png",
-    "answerIndex": 0,
     "answers": [
       "생각의 사슬 러닝",
       "생각의 사슬",
@@ -560,7 +551,6 @@
     "type": "subjective",
     "questionImage": "/questions/1급-B형-샘플/1급-B형-샘플_30번(주관식).png",
     "explainImage": "/explanations/1급-B형-샘플/1급-B형-샘플_30번.png",
-    "answerIndex": 0,
     "answers": [
       "AI",
       "CHOICE"
@@ -2482,7 +2472,6 @@
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_81번.png",
     "type": "subjective",
-    "answerIndex": 0,
     "answers": [
       "포지셔널 인코딩",
       "위치 인코딩",
@@ -2496,7 +2485,6 @@
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_82번.png",
     "type": "subjective",
-    "answerIndex": 0,
     "answers": [
       "BERT",
       "Bidirectional Encoder Representations from Transformers"
@@ -2509,7 +2497,6 @@
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_83번.png",
     "type": "subjective",
-    "answerIndex": 0,
     "answers": [
       "프롬프트 패턴",
       "프롬프트 전략 패턴",
@@ -2524,7 +2511,6 @@
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_84번.png",
     "type": "subjective",
-    "answerIndex": 0,
     "answers": [
       "질문 정제 패턴",
       "질문 개선 패턴",
@@ -2538,7 +2524,6 @@
     "sessionId": "제2401회_1급",
     "questionImage": "/questions/제2401회_1급/제2401회_1급_85번.png",
     "type": "subjective",
-    "answerIndex": 0,
     "answers": [
       "퓨샷패턴",
       "Few-shot Pattern"
@@ -4335,7 +4320,6 @@
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_81번.png",
     "type": "subjective",
-    "answerIndex": 0,
     "answers": [
       "역방향 상호작용 패턴"
     ],
@@ -4347,7 +4331,6 @@
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_82번.png",
     "type": "subjective",
-    "answerIndex": 0,
     "answers": [
       "Flipped Interaction 패턴",
       "Flipped Interaction Pattern"
@@ -4360,7 +4343,6 @@
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_83번.png",
     "type": "subjective",
-    "answerIndex": 0,
     "answers": [
       "거대언어모델",
       "대규모언어모델",
@@ -4377,7 +4359,6 @@
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_84번.png",
     "type": "subjective",
-    "answerIndex": 0,
     "answers": [
       "멀티모달",
       "Multi-modal",
@@ -4391,7 +4372,6 @@
     "sessionId": "제2501회_1급",
     "questionImage": "/questions/제2501회_1급/제2501회_1급_85번.png",
     "type": "subjective",
-    "answerIndex": 0,
     "answers": [
       "과적합",
       "과대적합",
@@ -5472,7 +5452,6 @@
     "id": "1급-A형-샘플_27번",
     "level": 1,
     "sessionId": "1급-A형-샘플",
-    "answerIndex": 0,
     "type": "subjective",
     "questionImage": "/questions/1급-A형-샘플/1급-A형-샘플_27번.png",
     "explainImage": "/explanations/1급-A형-샘플/1급-A형-샘플_27번.png",
@@ -5484,7 +5463,6 @@
     "id": "1급-A형-샘플_28번",
     "level": 1,
     "sessionId": "1급-A형-샘플",
-    "answerIndex": 0,
     "type": "subjective",
     "questionImage": "/questions/1급-A형-샘플/1급-A형-샘플_28번.png",
     "explainImage": "/explanations/1급-A형-샘플/1급-A형-샘플_28번.png",
@@ -5501,7 +5479,6 @@
     "id": "1급-A형-샘플_29번",
     "level": 1,
     "sessionId": "1급-A형-샘플",
-    "answerIndex": 0,
     "type": "subjective",
     "questionImage": "/questions/1급-A형-샘플/1급-A형-샘플_29번.png",
     "explainImage": "/explanations/1급-A형-샘플/1급-A형-샘플_29번.png",
@@ -5513,7 +5490,6 @@
     "id": "1급-A형-샘플_30번",
     "level": 1,
     "sessionId": "1급-A형-샘플",
-    "answerIndex": 0,
     "type": "subjective",
     "questionImage": "/questions/1급-A형-샘플/1급-A형-샘플_30번.png",
     "explainImage": "/explanations/1급-A형-샘플/1급-A형-샘플_30번.png",
@@ -5526,7 +5502,6 @@
     "id": "1급-A형-샘플_31번",
     "level": 1,
     "sessionId": "1급-A형-샘플",
-    "answerIndex": 0,
     "type": "subjective",
     "questionImage": "/questions/1급-A형-샘플/1급-A형-샘플_31~35번.png",
     "explainImage": "/explanations/1급-A형-샘플/1급-A형-샘플_31~35번.png",
@@ -5538,7 +5513,6 @@
     "id": "1급-A형-샘플_32번",
     "level": 1,
     "sessionId": "1급-A형-샘플",
-    "answerIndex": 0,
     "type": "subjective",
     "questionImage": "/questions/1급-A형-샘플/1급-A형-샘플_31~35번.png",
     "explainImage": "/explanations/1급-A형-샘플/1급-A형-샘플_31~35번.png",
@@ -5550,7 +5524,6 @@
     "id": "1급-A형-샘플_33번",
     "level": 1,
     "sessionId": "1급-A형-샘플",
-    "answerIndex": 0,
     "type": "subjective",
     "questionImage": "/questions/1급-A형-샘플/1급-A형-샘플_31~35번.png",
     "explainImage": "/explanations/1급-A형-샘플/1급-A형-샘플_31~35번.png",
@@ -5562,7 +5535,6 @@
     "id": "1급-A형-샘플_34번",
     "level": 1,
     "sessionId": "1급-A형-샘플",
-    "answerIndex": 0,
     "type": "subjective",
     "questionImage": "/questions/1급-A형-샘플/1급-A형-샘플_31~35번.png",
     "explainImage": "/explanations/1급-A형-샘플/1급-A형-샘플_31~35번.png",
@@ -5574,7 +5546,6 @@
     "id": "1급-A형-샘플_35번",
     "level": 1,
     "sessionId": "1급-A형-샘플",
-    "answerIndex": 0,
     "type": "subjective",
     "questionImage": "/questions/1급-A형-샘플/1급-A형-샘플_31~35번.png",
     "explainImage": "/explanations/1급-A형-샘플/1급-A형-샘플_31~35번.png",
