@@ -4321,7 +4321,9 @@
     "questionImage": "/questions/제2501회_1급/제2501회_1급_81번.png",
     "type": "subjective",
     "answers": [
-      "역방향 상호작용 패턴"
+      "역방향 상호작용 패턴",
+      "Flipped Interaction 패턴",
+      "Flipped Interaction Pattern"
     ],
     "explainText": "사용자가 먼저 자신의 사고 과정이나 해결 방안을 제시하고 AI가 이에 대해 피드백을 주거나 교정해 주는 패턴은 'Socratic Tutoring' 또는 'Feedback' 패턴의 변형으로 볼 수 있으나, AI POT 실무에서는 사용자의 선제적 참여를 유도하는 프롬프트 전략으로 다루어진다."
   },
@@ -4332,8 +4334,12 @@
     "questionImage": "/questions/제2501회_1급/제2501회_1급_82번.png",
     "type": "subjective",
     "answers": [
-      "Flipped Interaction 패턴",
-      "Flipped Interaction Pattern"
+      "거대언어모델",
+      "대규모언어모델",
+      "LLM",
+      "Large Language Model",
+      "파운데이션 모델",
+      "Foundation Model"
     ],
     "explainText": "파운데이션 모델 (Foundation Model)\\n설명: 방대한 데이터를 바탕으로 사전 학습되어 다양한 하위 작업에 맞춰 미세 조정이 가능한 범용적인 인공지능 모델을 의미한다."
   },
@@ -4344,13 +4350,9 @@
     "questionImage": "/questions/제2501회_1급/제2501회_1급_83번.png",
     "type": "subjective",
     "answers": [
-      "거대언어모델",
-      "대규모언어모델",
-      "LLM",
-      "Large Language Model",
-      "파운데이션 모델",
-      "Foundation Model"
-    ],
+      "멀티모달",
+      "Multi-modal",
+      "Multi Modal"    ],
     "explainText": "멀티모달 (Multimodal)\\n설명: 텍스트, 음성, 이미지 등 여러 유형의 데이터를 동시에 처리하고 이해하는 기술을 의미하며, CLIP이나 ImageBind 등이 대표적인 예시이다."
   },
   {
@@ -4360,9 +4362,10 @@
     "questionImage": "/questions/제2501회_1급/제2501회_1급_84번.png",
     "type": "subjective",
     "answers": [
-      "멀티모달",
-      "Multi-modal",
-      "Multi Modal"
+      "과적합",
+      "과대적합",
+      "오버피팅",
+      "Overfitting"
     ],
     "explainText": "과적합 (Overfitting)\\n설명: 모델이 학습 데이터에만 너무 과하게 최적화되어 새로운 데이터에 대한 일반화 성능이 떨어지는 현상을 말한다."
   },
@@ -4373,10 +4376,12 @@
     "questionImage": "/questions/제2501회_1급/제2501회_1급_85번.png",
     "type": "subjective",
     "answers": [
-      "과적합",
-      "과대적합",
-      "오버피팅",
-      "Overfitting"
+      "페르소나",
+      "페르소나 패턴",
+      "페르소나 프롬프팅 패턴",
+      "역할 기반 프롬프팅 패턴",
+      "페르소나 기반 프롬프팅 패턴",
+      "Persona Pattern"
     ],
     "explainText": "페르소나 (Persona) 또는 역할 지정 (Role Prompting)\\n설명: AI에게 '동기부여 코치'와 같은 특정한 역할을 부여하여 해당 역할의 전문성과 어조로 응답하도록 유도하는 프롬프트 패턴이다."
   },
