@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import { loadQuestions, Question } from "@/lib/questions";
 
 const CHOICES = ["①", "②", "③", "④"];
@@ -8,7 +8,7 @@ const NOTICE_QUESTION_ID = "1급-B형-샘플_37번";
 const NOTICE_TEXT = "한글 또는 영어 중 하나의 답만 입력해 주세요.";
 import { useSearchParams, useRouter } from "next/navigation";
 
-export default function ViewerPage() {
+function ViewerPageContent() {
   const sp = useSearchParams();
   const router = useRouter();
   const level = Number(sp.get("level") ?? "1") as 1 | 2;
@@ -207,5 +207,13 @@ export default function ViewerPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function ViewerPage() {
+  return (
+    <Suspense fallback={null}>
+      <ViewerPageContent />
+    </Suspense>
   );
 }

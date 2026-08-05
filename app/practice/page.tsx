@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import { loadQuestions, Question, shuffle } from "@/lib/questions";
 import { addWrong, getWrongMap } from "@/lib/wrongNotes";
 import { useSearchParams, useRouter } from "next/navigation";
@@ -40,7 +40,7 @@ const getQuestionNumber = (id?: string) => {
   return match ? Number(match[1]) : null;
 };
 
-export default function PracticePage() {
+function PracticePageContent() {
   const sp = useSearchParams();
   const router = useRouter();
 
@@ -805,5 +805,13 @@ export default function PracticePage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function PracticePage() {
+  return (
+    <Suspense fallback={null}>
+      <PracticePageContent />
+    </Suspense>
   );
 }
